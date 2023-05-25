@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="loz-birks">
+<meta name="dcterms.date" content="2023-05-25">
+
+<title>Publishing Your First Repo</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="how-to-doc_files/libs/clipboard/clipboard.min.js"></script>
+<script src="how-to-doc_files/libs/quarto-html/quarto.js"></script>
+<script src="how-to-doc_files/libs/quarto-html/popper.min.js"></script>
+<script src="how-to-doc_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="how-to-doc_files/libs/quarto-html/anchor.min.js"></script>
+<link href="how-to-doc_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="how-to-doc_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="how-to-doc_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="how-to-doc_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="how-to-doc_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<style>
+    .quarto-title-block .quarto-title-banner {
+      background-image: url(pics/nhs-blue.png);
+background-size: cover;
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Publishing Your First Repo</h1>
+            <p class="subtitle lead">South East Performance Analysis Team</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>loz-birks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 25, 2023</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#github-for-south-east-pat" id="toc-github-for-south-east-pat" class="nav-link active" data-scroll-target="#github-for-south-east-pat"> <span class="header-section-number">1</span> GitHub for South East PAT</a></li>
+  <li><a href="#preliminary-steps" id="toc-preliminary-steps" class="nav-link" data-scroll-target="#preliminary-steps"> <span class="header-section-number">2</span> Preliminary Steps</a>
+  <ul class="collapse">
+  <li><a href="#get-a-github-account" id="toc-get-a-github-account" class="nav-link" data-scroll-target="#get-a-github-account"> <span class="header-section-number">2.1</span> Get a GitHub account</a></li>
+  <li><a href="#get-added-to-the-nhs-england-organisation-and-se-pat-area" id="toc-get-added-to-the-nhs-england-organisation-and-se-pat-area" class="nav-link" data-scroll-target="#get-added-to-the-nhs-england-organisation-and-se-pat-area"> <span class="header-section-number">2.2</span> Get added to the NHS England Organisation and SE PAT area</a></li>
+  </ul></li>
+  <li><a href="#sharing-code-via-the-browser" id="toc-sharing-code-via-the-browser" class="nav-link" data-scroll-target="#sharing-code-via-the-browser"> <span class="header-section-number">3</span> Sharing code via the browser</a>
+  <ul class="collapse">
+  <li><a href="#sec-createrepo" id="toc-sec-createrepo" class="nav-link" data-scroll-target="#sec-createrepo"> <span class="header-section-number">3.1</span> Create the repo</a></li>
+  <li><a href="#move-the-repo-to-the-team-area" id="toc-move-the-repo-to-the-team-area" class="nav-link" data-scroll-target="#move-the-repo-to-the-team-area"> <span class="header-section-number">3.2</span> Move the repo to the team area</a></li>
+  <li><a href="#add-files-to-the-repo" id="toc-add-files-to-the-repo" class="nav-link" data-scroll-target="#add-files-to-the-repo"> <span class="header-section-number">3.3</span> Add files to the repo</a></li>
+  </ul></li>
+  <li><a href="#using-github-desktop" id="toc-using-github-desktop" class="nav-link" data-scroll-target="#using-github-desktop"> <span class="header-section-number">4</span> Using GitHub Desktop</a>
+  <ul class="collapse">
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"> <span class="header-section-number">4.1</span> Setup</a></li>
+  <li><a href="#local-repo-management" id="toc-local-repo-management" class="nav-link" data-scroll-target="#local-repo-management"> <span class="header-section-number">4.2</span> Local repo management</a>
+  <ul class="collapse">
+  <li><a href="#create-a-repo" id="toc-create-a-repo" class="nav-link" data-scroll-target="#create-a-repo"> <span class="header-section-number">4.2.1</span> Create a repo</a></li>
+  <li><a href="#gitignore" id="toc-gitignore" class="nav-link" data-scroll-target="#gitignore"> <span class="header-section-number">4.2.2</span> .gitignore</a></li>
+  <li><a href="#local-changes" id="toc-local-changes" class="nav-link" data-scroll-target="#local-changes"> <span class="header-section-number">4.2.3</span> Local changes</a></li>
+  <li><a href="#history" id="toc-history" class="nav-link" data-scroll-target="#history"> <span class="header-section-number">4.2.4</span> History</a></li>
+  </ul></li>
+  <li><a href="#push-to-github" id="toc-push-to-github" class="nav-link" data-scroll-target="#push-to-github"> <span class="header-section-number">4.3</span> Push to GitHub</a></li>
+  <li><a href="#open-a-github-repo" id="toc-open-a-github-repo" class="nav-link" data-scroll-target="#open-a-github-repo"> <span class="header-section-number">4.4</span> Open a GitHub repo</a>
+  <ul class="collapse">
+  <li><a href="#from-the-browser" id="toc-from-the-browser" class="nav-link" data-scroll-target="#from-the-browser"> <span class="header-section-number">4.4.1</span> From the Browser</a></li>
+  <li><a href="#from-github-desktop" id="toc-from-github-desktop" class="nav-link" data-scroll-target="#from-github-desktop"> <span class="header-section-number">4.4.2</span> From GitHub Desktop</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular" id="toc-hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular" class="nav-link" data-scroll-target="#hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular"> <span class="header-section-number">5</span> Hints / tips / notes / things that don’t particularly belong anywhere in particular</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="github-for-south-east-pat" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> GitHub for South East PAT</h1>
+<p>Our ambition in South East PAT is to share as much code as possible on GitHub, to maximise sharing with others as well as to help ourselves out in future. There are lots of things that this document does not cover but this is a very basic guide to publishing your first repo and hopefully we can make it less scary!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://media.giphy.com/media/nhmHnkhlDCMEhViLOJ/giphy.gif" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="preliminary-steps" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Preliminary Steps</h1>
+<p>Before we start, we need to check the following:</p>
+<ol type="1">
+<li>You have a GitHub account (with 2FA)</li>
+<li>You have been added to the NHS England Organisation</li>
+<li>You have been added to the South East PAT Team</li>
+</ol>
+<section id="get-a-github-account" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="get-a-github-account"><span class="header-section-number">2.1</span> Get a GitHub account</h2>
+<p>This is super simple- go to GitHub (<a href="https://github.com/" class="uri">https://github.com/</a>) and click <strong>Sign Up</strong>:</p>
+<p><img src="pics/sign-up.png" class="img-fluid"></p>
+<p>Then you need to enable two factor authentication. Once logged in, go to Settings &gt; Password and authentication, and, in the section called <strong>Two-factor authentication</strong>, click <strong>Enable</strong> and follow the instructions. You can use the same app that you authenticate other access with.</p>
+<p><img src="pics/2fa.png" class="img-fluid"></p>
+</section>
+<section id="get-added-to-the-nhs-england-organisation-and-se-pat-area" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="get-added-to-the-nhs-england-organisation-and-se-pat-area"><span class="header-section-number">2.2</span> Get added to the NHS England Organisation and SE PAT area</h2>
+<p>Once you have a GitHub account and are set up with 2FA, you can email the organisational GitHub Management inbox at github@england.nhs.uk, requesting to be added to the NHS England Organisation and the South East PAT area- you will need to cc Sam so that she can approve your addition to the team area.</p>
+<p><strong>That’s it, we’re ready to share some code</strong></p>
+</section>
+</section>
+<section id="sharing-code-via-the-browser" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Sharing code via the browser</h1>
+<p>This section covers very basic code sharing via the browser. It does not utilise many of the features of Git or GitHub but is a good first step for creating a library of code we can return to.</p>
+<section id="sec-createrepo" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-createrepo"><span class="header-section-number">3.1</span> Create the repo</h2>
+<p>When we first log in to GitHub, our homepage will look something like this. To create a repo, click the green <strong>New</strong> button in the left hand <strong>Top Repositories</strong> section.</p>
+<p><img src="pics/new-repo.png" class="img-fluid"></p>
+<p>We will also find this button in the <strong>Repositories</strong> sections on our profile and within any organisations that we are part of. They all lead to the same place. Which is here:</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Unpopulated</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Populated</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><img src="pics/repo-info.png" class="img-fluid" style="width:5in"></p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><img src="pics/repo-info-populated.png" class="img-fluid" style="width:5in"></p>
+</div>
+</div>
+</div>
+<p>As you can see, there are several things that need filling, and some that don’t. We take them from the top:</p>
+<ol type="1">
+<li><p><em>Repository template</em>- A couple of teams have set up templates for their repos to make life easier for them e.g.&nbsp;if they create a lot of repos with the same structures. If you haven’t created a template or don’t recognise any of them, you probably want to leave this as <strong>No template</strong>.</p></li>
+<li><p><em>Owner</em>- Depending on where you were when you clicked the <strong>New Repository</strong> button, this will default to either your own account or one of your organisations. It’s up to you where you store your repos but, generally, you would want to put work that you intend to share with colleagues within the organisation and keep only personal things in your own area.</p></li>
+<li><p><em>Repository name</em>- This should be a unique name that is short but reasonably descriptive. GitHub will handily tell you if the name is already in use somewhere else. Repo names shouldn’t include spaces but don’t worry if you forget, GitHub will replace spaces with hyphens.</p></li>
+<li><p><em>Description</em>- Although this field is optional, it’s a good idea to put something in here to help you (and others) quickly identify what the code is.</p></li>
+<li><p><em>Public / Private</em>- If you select <strong>Public</strong> then anyone anywhere can see your repo and the code within it. Selecting <strong>Private</strong> means that only those within the organisation (if the owner is an organisation) can see the code. Generally, this should be the default option- you can always change the privacy later.</p></li>
+<li><p><em>Add a README file</em>- Again, this is optional but generally a good idea. It will automatically create a markdown file with the repo name as the title and the description as the contents. You can then add details about the project including inputs, outputs, purpose, methodology etc. which will help you and others trying to use your code later.</p></li>
+<li><p><em>Add .gitignore</em>- A gitignore file tells GitHub which files to not look at and not publish. This could be things like data or personal user keys that you don’t want to share. We will use these more when we look at using GitHub Desktop but it is less important if you just plan to upload files manually.</p></li>
+<li><p><em>Choose a license</em>- This just tells people what they can do with their code. You can leave this as <strong>None</strong> if you want or, if you’re happy for people to use and replicate your code as they please, you might choose the <strong>MIT License</strong>.</p></li>
+</ol>
+<p>Now you can click <strong>Create repository</strong>.</p>
+</section>
+<section id="move-the-repo-to-the-team-area" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="move-the-repo-to-the-team-area"><span class="header-section-number">3.2</span> Move the repo to the team area</h2>
+<p>If you have created your repo in the organisational area, you might want to move it to live in the South East area. This is very simple.</p>
+<ol type="1">
+<li>Navigate to the repo and click the <strong>Settings</strong> button</li>
+</ol>
+<p><img src="pics/repo-settings.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>Within the <strong>Access</strong> section, click <strong>Collaborators and teams</strong> (top left), and click <strong>Add teams</strong></li>
+</ol>
+<p><img src="pics/collab-and-teams.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Finally search for and select South East PAT</li>
+</ol>
+<p><img src="pics/south-east-team.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Choose what role you want your team members to have</li>
+</ol>
+<p><img src="pics/role-select.png" class="img-fluid"></p>
+<p>Your repo now lives in the South East PAT section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you’ve allowed them to!</p>
+</section>
+<section id="add-files-to-the-repo" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="add-files-to-the-repo"><span class="header-section-number">3.3</span> Add files to the repo</h2>
+<p>Finally, all you need to do is actually upload some files!</p>
+<ol type="1">
+<li>Navigate to your repo and click <strong>Add file</strong> and then <strong>Upload files</strong>]</li>
+</ol>
+<p><img src="pics/upload-files.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>Drag and drop or browse to your files</li>
+</ol>
+<p><img src="pics/file-upload-wizard.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Name your commit, so you know what you added when, and click ✨<strong>Commit changes</strong>✨</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://media.giphy.com/media/G96zgIcQn1L2xpmdxi/giphy.gif" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="using-github-desktop" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Using GitHub Desktop</h1>
+<p>For those that want do more version control and collaboration, GitHub desktop is a good place to start.</p>
+<section id="setup" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="setup"><span class="header-section-number">4.1</span> Setup</h2>
+<p>First step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for <strong>GitHub</strong>. You want to download the app with the purple cat.</p>
+<p><img src="pics/company-portal.png" class="img-fluid"></p>
+<p>You will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can’t remember).</p>
+<p>If you ever need to change your associated github account, you can navigate File &gt; Options, and switch account in there.</p>
+<p><img src="pics/change-account.png" class="img-fluid"></p>
+</section>
+<section id="local-repo-management" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="local-repo-management"><span class="header-section-number">4.2</span> Local repo management</h2>
+<section id="create-a-repo" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="create-a-repo"><span class="header-section-number">4.2.1</span> Create a repo</h3>
+<p>Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see <a href="#sec-createrepo">Section&nbsp;3.1</a> for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.</p>
+<p><img src="pics/desktop-new-repo.png" class="img-fluid"></p>
+</section>
+<section id="gitignore" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="gitignore"><span class="header-section-number">4.2.2</span> .gitignore</h3>
+<section id="what-is-it-for" class="level4" data-number="4.2.2.1">
+<h4 data-number="4.2.2.1" class="anchored" data-anchor-id="what-is-it-for"><span class="header-section-number">4.2.2.1</span> What is it for?</h4>
+<p>Setting up a gitignore file is a bit more important when working from GitHub desktop than when simply uploading files to the browser version. By default, all the files in the repo folder will be included in the repo. However, there are likely to be some files or information that you don’t want to share. For example, this could be data or sensitive connection strings. The gitignore file tells the repo which files not to look at.</p>
+</section>
+<section id="how-do-we-set-one-up" class="level4" data-number="4.2.2.2">
+<h4 data-number="4.2.2.2" class="anchored" data-anchor-id="how-do-we-set-one-up"><span class="header-section-number">4.2.2.2</span> How do we set one up?</h4>
+<p>This file can be set up when you create the repo by selecting a specific gitignore template. This will ignore a determined list of filetypes which are commonly associated with the option you select. For example, if you select the <strong>R</strong> gitignore template, the file will include all R History, R Data, R User Data, etc. It can be a good starting point if you don’t know where to start.</p>
+</section>
+<section id="how-can-i-add-new-files-to-the-gitignore" class="level4" data-number="4.2.2.3">
+<h4 data-number="4.2.2.3" class="anchored" data-anchor-id="how-can-i-add-new-files-to-the-gitignore"><span class="header-section-number">4.2.2.3</span> How can I add new files to the gitignore?</h4>
+<p>Files can be added to the gitignore manually by right clicking on a file in the <strong>Changes</strong> section of GitHub desktop, and clicking <strong>Ignore file</strong>. You can choose whether to add the individual file or all files of the same filetype (this might be useful if you want to blanket ignore e.g.&nbsp;.csv files)</p>
+</section>
+<section id="how-can-i-make-manual-changes" class="level4" data-number="4.2.2.4">
+<h4 data-number="4.2.2.4" class="anchored" data-anchor-id="how-can-i-make-manual-changes"><span class="header-section-number">4.2.2.4</span> How can I make manual changes?</h4>
+<p>You can change your gitignore file as you go along by opening it as a text file, making your changes, and saving them. You can then commit changes to your gitignore file in the same way as you commit changes to any other file in the repo so that they are tracked.</p>
+<p>Alternatively, you can update the gitignore by navigating to Repository &gt; Repository settings &gt; Ignored files and make changes there.</p>
+</section>
+<section id="what-can-go-in-the-gitignore" class="level4" data-number="4.2.2.5">
+<h4 data-number="4.2.2.5" class="anchored" data-anchor-id="what-can-go-in-the-gitignore"><span class="header-section-number">4.2.2.5</span> What can go in the gitignore?</h4>
+<ul>
+<li><em>Individual files</em>: you can ignore individual files by typing the filename</li>
+<li><em>Whole filetypes</em>: if you want to ignore all of a particular filetype just prefix the filetype with an asterisk e.g.&nbsp;*.xlsx</li>
+<li><em>Folders and subfolders</em>: if you don’t want a whole folder included, you can just name the folder path e.g.&nbsp;/data</li>
+</ul>
+</section>
+</section>
+<section id="local-changes" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="local-changes"><span class="header-section-number">4.2.3</span> Local changes</h3>
+<p>Until you click <strong>Publish repository</strong>, everything you create will live locally. This means that you can make changes to your files and code and play about endlessly until you’re happy to share more widely. It’s still a good idea to manage and commit changes.</p>
+<p>You should now be able to create your projects and files within the repo folder (which lives wherever you decided when you set up the repo). You are then free to code / change files as you would normally within whichever programmes you use. All your saved changes will be tracked.</p>
+<p>Any changes you save in any files in this folder (that aren’t ignored) will appear in the GitHub desktop <strong>changes</strong> section. You can see which file has changed, what has been removed (red), and what has been added (green). If you like the changes, ensure that the tick box is checked on the left of the file name, name your commit and add a description (optional), and click <strong>Commit to main</strong>.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.</p>
+</div>
+</div>
+<p><img src="pics/changes-example.png" class="img-fluid"></p>
+<p>You can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately</p>
+</section>
+<section id="history" class="level3" data-number="4.2.4">
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="history"><span class="header-section-number">4.2.4</span> History</h3>
+<p>If you need to review or revisit any prior commits, you can see these in the <strong>History</strong> tab.</p>
+<p><img src="pics/history.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="push-to-github" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="push-to-github"><span class="header-section-number">4.3</span> Push to GitHub</h2>
+<p>All that’s left to do is share your repo to github. This is as easy as clicking the <strong>Publish repository</strong> button.</p>
+<p><img src="pics/publish-repo.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Remember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won’t be able to make changes or move to the South East area!</p>
+</div>
+</div>
+<p>You can also pull any changes from github down to your local machine by clicking <strong>Pull origin</strong> in the top bar</p>
+</section>
+<section id="open-a-github-repo" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="open-a-github-repo"><span class="header-section-number">4.4</span> Open a GitHub repo</h2>
+<p>As well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:</p>
+<ul>
+<li>From the browser</li>
+<li>From the desktop app</li>
+</ul>
+<section id="from-the-browser" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="from-the-browser"><span class="header-section-number">4.4.1</span> From the Browser</h3>
+<p>This is really easy. Navigate to the repo you want to work on. Click the green <strong>&lt;&gt; Code</strong> button, and then <strong>Open with GitHub Desktop</strong>. Easy.</p>
+<p><img src="pics/open-repo-browser.png" class="img-fluid"></p>
+</section>
+<section id="from-github-desktop" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="from-github-desktop"><span class="header-section-number">4.4.2</span> From GitHub Desktop</h3>
+<p>This is almost as easy. Within GitHub desktop, navigate to File &gt; Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.</p>
+<p><img src="pics/clone-repo-desktop.png" class="img-fluid"></p>
+</section>
+</section>
+</section>
+<section id="hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Hints / tips / notes / things that don’t particularly belong anywhere in particular</h1>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We do not have the power to delete repos from the NHS England organisation. If you need to have something deleted, you will need to contact the central inbox at github@england.nhs.uk.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://media.giphy.com/media/i4EmQUxdam6u0Q98bs/giphy.gif" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
