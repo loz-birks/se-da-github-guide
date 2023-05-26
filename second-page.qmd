@@ -3,3 +3,5 @@ title: "Second Page"
 ---
 
 Here is a second page test!
+
+![](https://media.giphy.com/media/3orieKKmYyvUdR3RkY/giphy.gif)
