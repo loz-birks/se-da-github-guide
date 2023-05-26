@@ -20,11 +20,11 @@ Before we start, we need to check the following:
 
 This is super simple- go to GitHub (<https://github.com/>) and click **Sign Up**:
 
-![](pics/sign-up.png)
+![](pics/sign-up.PNG)
 
 Then you need to enable two factor authentication. Once logged in, go to Settings \> Password and authentication, and, in the section called **Two-factor authentication**, click **Enable** and follow the instructions. You can use the same app that you authenticate other access with.
 
-![](pics/2fa.png)
+![](pics/2fa.PNG)
 
 ## Get added to the NHS England Organisation and SE PAT area
 
@@ -40,18 +40,18 @@ This section covers very basic code sharing via the browser. It does not utilise
 
 When we first log in to GitHub, our homepage will look something like this. To create a repo, click the green **New** button in the left hand **Top Repositories** section.
 
-![](pics/new-repo.png)
+![](pics/new-repo.PNG)
 
 We will also find this button in the **Repositories** sections on our profile and within any organisations that we are part of. They all lead to the same place. Which is here:
 
 ::: panel-tabset
 ### Unpopulated
 
-![](pics/repo-info.png){width="5in"}
+![](pics/repo-info.PNG){width="5in"}
 
 ### Populated
 
-![](pics/repo-info-populated.png){width="5in"}
+![](pics/repo-info-populated.PNG){width="5in"}
 :::
 
 As you can see, there are several things that need filling, and some that don't. We take them from the top:
@@ -80,19 +80,19 @@ If you have created your repo in the organisational area, you might want to move
 
 1.  Navigate to the repo and click the **Settings** button
 
-![](pics/repo-settings.png)
+![](pics/repo-settings.PNG)
 
 2.  Within the **Access** section, click **Collaborators and teams** (top left), and click **Add teams**
 
-![](pics/collab-and-teams.png)
+![](pics/collab-and-teams.PNG)
 
 3.  Finally search for and select South East PAT
 
-![](pics/south-east-team.png)
+![](pics/south-east-team.PNG)
 
 4.  Choose what role you want your team members to have
 
-![](pics/role-select.png)
+![](pics/role-select.PNG)
 
 Your repo now lives in the South East PAT section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you've allowed them to!
 
@@ -102,11 +102,11 @@ Finally, all you need to do is actually upload some files!
 
 1.  Navigate to your repo and click **Add file** and then **Upload files**\]
 
-![](pics/upload-files.png)
+![](pics/upload-files.PNG)
 
 2.  Drag and drop or browse to your files
 
-![](pics/file-upload-wizard.png)
+![](pics/file-upload-wizard.PNG)
 
 3.  Name your commit, so you know what you added when, and click ✨**Commit changes**✨
 
@@ -120,13 +120,13 @@ For those that want do more version control and collaboration, GitHub desktop is
 
 First step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for **GitHub**. You want to download the app with the purple cat.
 
-![](pics/company-portal.png)
+![](pics/company-portal.PNG)
 
 You will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can't remember).
 
 If you ever need to change your associated github account, you can navigate File \> Options, and switch account in there.
 
-![](pics/change-account.png)
+![](pics/change-account.PNG)
 
 ## Local repo management
 
@@ -134,7 +134,7 @@ If you ever need to change your associated github account, you can navigate File
 
 Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see @sec-createrepo for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.
 
-![](pics/desktop-new-repo.png)
+![](pics/desktop-new-repo.PNG)
 
 ### .gitignore
 
@@ -174,7 +174,7 @@ Any changes you save in any files in this folder (that aren't ignored) will appe
 A green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.
 :::
 
-![](pics/changes-example.png)
+![](pics/changes-example.PNG)
 
 You can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately
 
@@ -182,13 +182,13 @@ You can make changes to multiple files in a single commit or commit them separat
 
 If you need to review or revisit any prior commits, you can see these in the **History** tab.
 
-![](pics/history.png)
+![](pics/history.PNG)
 
 ## Push to GitHub
 
 All that's left to do is share your repo to github. This is as easy as clicking the **Publish repository** button.
 
-![](pics/publish-repo.png)
+![](pics/publish-repo.PNG)
 
 ::: callout-note
 Remember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won't be able to make changes or move to the South East area!
@@ -207,13 +207,13 @@ As well as creating your own repos, it may be that you want to open someone else
 
 This is really easy. Navigate to the repo you want to work on. Click the green **\<\> Code** button, and then **Open with GitHub Desktop**. Easy.
 
-![](pics/open-repo-browser.png)
+![](pics/open-repo-browser.PNG)
 
 ### From GitHub Desktop
 
 This is almost as easy. Within GitHub desktop, navigate to File \> Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.
 
-![](pics/clone-repo-desktop.png)
+![](pics/clone-repo-desktop.PNG)
 
 # Hints / tips / notes / things that don't particularly belong anywhere in particular
 
