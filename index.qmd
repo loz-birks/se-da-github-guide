@@ -80,7 +80,7 @@ If you have created your repo in the organisational area, you might want to move
 
 1.  Navigate to the repo and click the **Settings** button
 
-![](pics/repo-settings2.jpg)
+![](pics/repo-settings.png)
 
 2.  Within the **Access** section, click **Collaborators and teams** (top left), and click **Add teams**
 
