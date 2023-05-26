@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Publishing Your First Repo"
+  description: "test site"
+
+  navbar:
+    background: light
+    title: false
+    collapse-below: lg
+    left:
+      - text: "Homepage"
+        icon: "house-door"
+        href: index.qmd
+      # - text: "Tutorials"
+      #   icon: "bookmark-check"
+      #   href: tutorials/index.qmd
+      # - text: "Updates"
+      #   icon: "rss"
+      #   href: updates.qmd
+      
+format:
+  html:
+    toc: true
+    theme: cosmo
+
+execute:
+  freeze: auto
