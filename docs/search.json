@@ -68,5 +68,12 @@
     "title": "Publishing Your First Repo",
     "section": "Open a GitHub repo",
     "text": "Open a GitHub repo\nAs well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:\n\nFrom the browser\nFrom the desktop app\n\n\nFrom the Browser\nThis is really easy. Navigate to the repo you want to work on. Click the green <> Code button, and then Open with GitHub Desktop. Easy.\n\n\n\nFrom GitHub Desktop\nThis is almost as easy. Within GitHub desktop, navigate to File > Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine."
+  },
+  {
+    "objectID": "second-page.html",
+    "href": "second-page.html",
+    "title": "Second Page",
+    "section": "",
+    "text": "Here is a second page test!"
   }
 ]

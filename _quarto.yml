@@ -12,11 +12,9 @@ website:
     collapse-below: lg
     left:
       - text: "Homepage"
-        icon: "house-door"
         href: index.qmd
-      # - text: "Tutorials"
-      #   icon: "bookmark-check"
-      #   href: tutorials/index.qmd
+      - text: "Second Page"
+        href: second-page.qmd
       # - text: "Updates"
       #   icon: "rss"
       #   href: updates.qmd
