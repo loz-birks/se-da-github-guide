@@ -28,7 +28,7 @@ Then you need to enable two factor authentication. Once logged in, go to Setting
 
 ## Get added to the NHS England Organisation and SE PAT area
 
-Once you have a GitHub account and are set up with 2FA, you can email the organisational GitHub Management inbox at github\@england.nhs.uk, requesting to be added to the NHS England Organisation and the South East PAT area- you will need to cc Sam so that she can approve your addition to the team area.
+Once you have a GitHub account and are set up with 2FA, you can email Sam A in our team, requesting to be added to the NHS England Organisation and the South East PAT area.
 
 **That's it, we're ready to share some code**
 
