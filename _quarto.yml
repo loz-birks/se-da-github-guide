@@ -13,10 +13,10 @@ website:
     left:
       - text: "Homepage"
         href: index.qmd
-      - text: "Second Page"
-        href: second-page.qmd
-      - text: "Understanding other people's code"
+      - text: "Making sense of code"
         href: understanding-code.qmd 
+      - text: "Another Page"
+        href: second-page.qmd
       # - text: "Updates"
       #   icon: "rss"
       #   href: updates.qmd

@@ -1,5 +1,5 @@
 ---
-title: "Second Page"
+title: "Another Page"
 ---
 
 Here is a second page test!
