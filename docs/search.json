@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Publishing Your First Repo",
     "section": "",
-    "text": "Our ambition in South East PAT is to share as much code as possible on GitHub, to maximise sharing with others as well as to help ourselves out in future. There are lots of things that this document does not cover but this is a very basic guide to publishing your first repo and hopefully we can make it less scary!"
+    "text": "Our ambition in South East D&A is to share as much code as possible on GitHub, to maximise sharing with others as well as to help ourselves out in future. There are lots of things that this document does not cover but this is a very basic guide to publishing your first repo and hopefully we can make it less scary!"
   },
   {
     "objectID": "index.html#get-a-github-account",
@@ -32,7 +32,7 @@
     "href": "index.html#move-the-repo-to-the-team-area",
     "title": "Publishing Your First Repo",
     "section": "Move the repo to the team area",
-    "text": "Move the repo to the team area\nIf you have created your repo in the organisational area, you might want to move it to live in the South East area. This is very simple.\n\nNavigate to the repo and click the Settings button\n\n\n\nWithin the Access section, click Collaborators and teams (top left), and click Add teams\n\n\n\nFinally search for and select South East PAT\n\n\n\nChoose what role you want your team members to have\n\n\nYour repo now lives in the South East PAT section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you’ve allowed them to!"
+    "text": "Move the repo to the team area\nIf you have created your repo in the organisational area, you might want to move it to live in the South East area. This is very simple.\n\nNavigate to the repo and click the Settings button\n\n\n\nWithin the Access section, click Collaborators and teams (top left), and click Add teams\n\n\n\nFinally search for and select South East D&A\n\n\n\nChoose what role you want your team members to have\n\n\nYour repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you’ve allowed them to!"
   },
   {
     "objectID": "index.html#add-files-to-the-repo",
@@ -138,5 +138,12 @@
     "title": "Making sense of code",
     "section": "Tips",
     "text": "Tips\nNote: these are R specific tips to help with organising your own, and others’, code.\n\nIndentation:\nHighlighting code and hitting ctrl + i will indent all code. This makes it easier to read and spot the starts and ends of complex functions and loops.\n\n\nRainbow parenthesis:\nThis is a really handy way to patch opening to closing parenthesis. You can spend more time understanding what things are doing rather than counting and matching opening and closing brackets.\nTools &gt; Global Options &gt; Code &gt; Display &gt; Rainbow parenthesis\n\n\nSearching functions:\nIf you don’t know what a function does or what its inputs / outputs are, you can search in the console e.g. don’t know what mutate does, type ?mutate and hit enter and you will see a short description of what mutate does and an explanation of the variables it takes as inputs.\n\n\nSections:\nCreate a section by ctrl + shift + r and giving it a name. Sections created like this can be collapsed and navigated to using the menu between the script and the console. This can help you navigate your code and focus only on the section you need."
+  },
+  {
+    "objectID": "index.html#get-added-to-the-nhs-england-organisation-and-se-da-area",
+    "href": "index.html#get-added-to-the-nhs-england-organisation-and-se-da-area",
+    "title": "Publishing Your First Repo",
+    "section": "Get added to the NHS England Organisation and SE D&A area",
+    "text": "Get added to the NHS England Organisation and SE D&A area\nOnce you have a GitHub account and are set up with 2FA, you can email Sam A in our team, requesting to be added to the NHS England Organisation and then one of our local admins can add you to the South East D&A area.\n\n\n\n\n\n\nTip\n\n\n\nImportant note: the permissions set up means that creating a repo in your personal area and moving it to the organisation area will result in you losing all admin permissions (e.g. to add users / move to the team area). So make sure you are putting repos in the right place!!\n\n\nThat’s it, we’re ready to share some code!"
   }
 ]

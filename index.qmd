@@ -2,9 +2,9 @@
 title: "Publishing Your First Repo"
 ---
 
-# GitHub for South East PAT
+# GitHub for South East D&A
 
-Our ambition in South East PAT is to share as much code as possible on GitHub, to maximise sharing with others as well as to help ourselves out in future. There are lots of things that this document does not cover but this is a very basic guide to publishing your first repo and hopefully we can make it less scary!
+Our ambition in South East D&A is to share as much code as possible on GitHub, to maximise sharing with others as well as to help ourselves out in future. There are lots of things that this document does not cover but this is a very basic guide to publishing your first repo and hopefully we can make it less scary!
 
 ![](https://media.giphy.com/media/nhmHnkhlDCMEhViLOJ/giphy.gif){fig-align="center"}
 
@@ -14,7 +14,7 @@ Before we start, we need to check the following:
 
 1.  You have a GitHub account (with 2FA)
 2.  You have been added to the NHS England Organisation
-3.  You have been added to the South East PAT Team
+3.  You have been added to the South East D&A Team
 
 ## Get a GitHub account
 
@@ -26,11 +26,15 @@ Then you need to enable two factor authentication. Once logged in, go to Setting
 
 ![](pics/2fa.PNG)
 
-## Get added to the NHS England Organisation and SE PAT area
+## Get added to the NHS England Organisation and SE D&A area
 
-Once you have a GitHub account and are set up with 2FA, you can email Sam A in our team, requesting to be added to the NHS England Organisation and the South East PAT area.
+Once you have a GitHub account and are set up with 2FA, you can email Sam A in our team, requesting to be added to the NHS England Organisation and then one of our local admins can add you to the South East D&A area.
 
-**That's it, we're ready to share some code**
+::: callout-tip
+Important note: the permissions set up means that creating a repo in your personal area and moving it to the organisation area will result in you losing all admin permissions (e.g. to add users / move to the team area). So make sure you are putting repos in the right place!!
+:::
+
+**That's it, we're ready to share some code!**
 
 # Sharing code via the browser
 
@@ -86,7 +90,7 @@ If you have created your repo in the organisational area, you might want to move
 
 ![](pics/collab-and-teams.png)
 
-3.  Finally search for and select South East PAT
+3.  Finally search for and select South East D&A
 
 ![](pics/south-east-team.PNG)
 
@@ -94,7 +98,7 @@ If you have created your repo in the organisational area, you might want to move
 
 ![](pics/role-select.PNG)
 
-Your repo now lives in the South East PAT section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you've allowed them to!
+Your repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you've allowed them to!
 
 ## Add files to the repo
 
