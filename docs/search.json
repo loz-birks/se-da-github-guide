@@ -145,5 +145,26 @@
     "title": "Publishing Your First Repo",
     "section": "Get added to the NHS England Organisation and SE D&A area",
     "text": "Get added to the NHS England Organisation and SE D&A area\nOnce you have a GitHub account and are set up with 2FA, you can email the organisational GitHub Management inbox at github@england.nhs.uk, requesting to be added to the NHS England Organisation and then one of our local admins can add you to the South East D&A area.\n\n\n\n\n\n\nTip\n\n\n\nImportant note: the permissions set up means that creating a repo in your personal area and moving it to the organisation area will result in you losing all admin permissions (e.g. to add users / move to the team area). So make sure you are putting repos in the right place!!\n\n\nThat’s it, we’re ready to share some code!"
+  },
+  {
+    "objectID": "version-control.html",
+    "href": "version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Blurb about why to use version control."
+  },
+  {
+    "objectID": "version-control.html#part-1-create-a-new-rstudio-project-with-git",
+    "href": "version-control.html#part-1-create-a-new-rstudio-project-with-git",
+    "title": "Version Control",
+    "section": "Part 1: Create a new RStudio project with Git",
+    "text": "Part 1: Create a new RStudio project with Git\nThere are three ways to create version control for a RStudio project.\na) Create a new project and create a local Git repository: Select File &gt; New Project.., create a project from a New Directory and check the option Create a git repository. In order to push to a remote repository later on you add that remote repository by using the Git shell. If you already know which online repository you want to use for your projects, option c) is more convenient.\nb) Create a new project from a folder under version control: In this case you only need to create a new RStudio project for that directory and version control is automatically enabled. Go to File &gt; New Project, select create a new project from an Existing Directory and create the project.\nc) Create a new project based on a remote Git repository: Select File &gt; New Project.. and from the opening menu select to create a new project from Version Control, Choose Git, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the the repository you want to clone and create the project.\nIn this tutorial we create a project based on a remote GitHub repository (option c). Hence we first create a new repository on GitHub and create our GitHub project from that repository.\n1. Create a new GitHub repository: Login to your GitHub account and create a new GitHub repository. Give your new repository a short and memorable name e.g. rstudio-git-test, check the option to initialize this repository with a README and create the repository.\n2. Copy the repository HTTPS url: To create a new Git based project in RStudio, we need the repository url. You find the repository HTTPS url on the just created GitHub project page. There press the button &lt;&gt; Code (green button) and copy the HTTPS link of the project by clicking the little icon to the right of the URL. The link will be something like https://github.com/yourusername/rstudio-git-test.git.\n3. Create a new RStudio project with Git version control: Now everything is ready to create a new project with Git version control in RStudio. In RStudio Select File &gt; New Project.., select Version Control, Choose Git, then provide the repository HTTPS link, select the R workspace folder and create the project. RStudio now copies (clone in Git terms) the content of the repository to your project folder. The content of the GitHub repository should now appear in the Files pane of RStudio and you should see there the created README.md."
+  },
+  {
+    "objectID": "version-control.html#part-2-make-local-changes-commit-and-push-to-github",
+    "href": "version-control.html#part-2-make-local-changes-commit-and-push-to-github",
+    "title": "Version Control",
+    "section": "Part 2: Make local changes, commit and push to GitHub",
+    "text": "Part 2: Make local changes, commit and push to GitHub\n1. Make local changes: Open the README.md file and edit and save the file.\n# RR project in RStudio\n\nRR workshop RStudio + Git repository\n\nMy first commit to GitHub with R \n2. Commit the changes: Now we commit the local changes to the local Git repository.\nIn RStudio press the Git icon and select Commit from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the Staged column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.Readme update and press the Commit button.\n\n\n3. Push to the remote repository: To push the changes to the remote GitHub repository press the Push button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub."
   }
 ]
