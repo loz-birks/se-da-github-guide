@@ -28,7 +28,7 @@ Then you need to enable two factor authentication. Once logged in, go to Setting
 
 ## Get added to the NHS England Organisation and SE D&A area
 
-Once you have a GitHub account and are set up with 2FA, you can email Sam A in our team, requesting to be added to the NHS England Organisation and then one of our local admins can add you to the South East D&A area.
+Once you have a GitHub account and are set up with 2FA, you can email the organisational GitHub Management inbox at github\@england.nhs.uk, requesting to be added to the NHS England Organisation and then one of our local admins can add you to the South East D&A area.
 
 ::: callout-tip
 Important note: the permissions set up means that creating a repo in your personal area and moving it to the organisation area will result in you losing all admin permissions (e.g. to add users / move to the team area). So make sure you are putting repos in the right place!!
@@ -104,7 +104,7 @@ Your repo now lives in the South East D&A section of the organisation. This shou
 
 Finally, all you need to do is actually upload some files!
 
-1.  Navigate to your repo and click **Add file** and then **Upload files**\]
+1.  Navigate to your repo and click **Add file** and then **Upload files**
 
 ![](pics/upload-files.PNG)
 
@@ -194,7 +194,7 @@ All that's left to do is share your repo to github. This is as easy as clicking 
 
 ![](pics/publish-repo.PNG)
 
-::: callout-note
+::: callout-important
 Remember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won't be able to make changes or move to the South East area!
 :::
 
