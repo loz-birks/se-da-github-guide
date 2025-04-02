@@ -1,0 +1,133 @@
+---
+title: "Using GitHub in Databricks"
+---
+
+# Aims
+
+Many of the principles of working in a reproducible way and using GitHub for this also apply when we use GitHub in UDAL and Databricks. We will go through the practicalities of connecting to and using your GitHub account in Databricks.
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2NxNDAxazQzNmRmb2R6NGdlM2d1azRpbDhlNWZlaXNkMmJ2Y2J5byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11thnyggFkrmmc/giphy.gif){fig-align="center"}
+
+# Create a Personal Access Token
+
+First, we need to create a personal access token for our GitHub account. 
+
+## In GitHub 
+
+Go to your GitHub account...
+
+1.  Click on your profile photo and go to **settings**.
+
+![](pics/databricks-pat-1.PNG)
+
+2.  Scroll down to **Developer Settings**. For me this was the bottom option in the left pane so keep scrolling!
+
+![](pics/databricks-pat-2.PNG)
+
+3.  Click the **Personal Access Tokens** tab on the left and then **Tokens (Classic)**.
+
+![](pics/databricks-pat-3.PNG)
+
+4.  Click **Generate New Token**, choose the **(Classic)** option if offered that choice.
+
+![](pics/databricks-pat-4.PNG)
+
+5.  Enter a name for your token. Help yourself out here and give it a sensible name... Give the token all the **repo** scope and, if you use GitHub actions, also select the **workflow** scope.
+
+::: callout-tip
+Note: although you can set your token to have no expiry date, for security purposes, it is recommended that you give your token an expiry date.
+:::
+
+![](pics/databricks-pat-5.PNG)
+
+6.  Click **Generate Token**.
+
+![](pics/databricks-pat-6.PNG)
+
+An access token should appear (and you will also get an email to notify you that it has been created).
+
+::: callout-important
+Note: Once you navigate away from this page, the token will disappear and **never come back again**, so make sure you copy it to the clipboard.
+:::
+
+![](pics/databricks-pat-7.PNG)
+
+# In Databricks
+
+Within Databricks (once you've logged into UDAL and authenticated yourself as many times as it has deemed necessary today):
+
+## Connecting with your token
+
+1.  CLick on your profile in the top right and then **Settings**.
+
+![](pics/databricks-db-1.PNG)
+
+2.  Then click **Linked Accounts**.
+
+![](pics/databricks-db-2.PNG)
+
+3.  Populate the form with GitHub as the Git Provider and your own user name. This is where you can paste your Personal Access Token.
+
+![](pics/databricks-db-3.PNG)
+
+::: callout-tip
+Remember: you can't copy and paste from outside UDAL...
+:::
+
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjVlNTlqaGhlOXF1b29la3d2bHdhcmwzOGp2MXRjbGV5aHp0b3N0dyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MIjrTt2chAJzF2fzL5/giphy.gif){fig-align="center"}
+
+# Working with repos
+
+## Creating a repo reminder
+
+1.  If you do not already have a repo you want to clone, you can create one on GitHub. Feel free to use the SE github template which will initialise a repo with a gitignore, SOP folder and template, and README template with some key reporting info for you to easily edit.
+
+::: callout-important 
+Remember to create your repo in the nhsengland area, not your personal GitHub, otherwise when you transfer it you will lose your admin privileges! You should also add the *South East D&A Team* and the *everyone* team to the permissions.
+:::
+
+![](pics/databricks-template-1.PNG)
+
+Now that you have a repo to clone...
+
+## Cloning a repo
+
+2. In your Home (personal) area of Databricks, click **Create** and then **Git Folder**. 
+
+![](pics/databricks-git-1.PNG)
+
+or go via the big **New** button in the top left. 
+
+![](pics/databricks-git-2.PNG)
+
+3. Copy the repo URL into this box and give your folder a name. 
+
+![](pics/databricks-git-3.PNG)
+
+You can get the repo URL from GitHub. Navigate to the repo and click the big **<>Code** button. 
+
+![](pics/databricks-git-4.PNG)
+
+When you've done, it should look something like this:
+
+![](pics/databricks-git-5.PNG)
+
+You are now ✨**Connected**✨
+
+# Maintaining your repo
+
+## The Git Window
+
+Click on the branch name to open the Git window.
+
+![](pics/databricks-git-6.PNG)
+
+From here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.
+
+![](pics/databricks-git-7.PNG)
+
+## The gitignore
+
+Any files that you want to ignore can be added to the gitignore using the relative file path.
+
+![](pics/databricks-gitignore-1.PNG)
