@@ -58,7 +58,7 @@ Within Databricks (once you've logged into UDAL and authenticated yourself as ma
 
 ## Connecting with your token
 
-1.  CLick on your profile in the top right and then **Settings**.
+1.  Click on your profile in the top right and then **Settings**.
 
 ![](pics/databricks-db-1.png)
 
