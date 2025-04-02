@@ -18,7 +18,7 @@ Go to your GitHub account...
 
 1.  Click on your profile photo and go to **settings**.
 
-![](pics/databricks-pat-1.PNG)
+![](pics/databricks-pat-1.png)
 
 2.  Scroll down to **Developer Settings**. For me this was the bottom option in the left pane so keep scrolling!
 
@@ -30,7 +30,7 @@ Go to your GitHub account...
 
 4.  Click **Generate New Token**, choose the **(Classic)** option if offered that choice.
 
-![](pics/databricks-pat-4.PNG)
+![](pics/databricks-pat-4.png)
 
 5.  Enter a name for your token. Help yourself out here and give it a sensible name... Give the token all the **repo** scope and, if you use GitHub actions, also select the **workflow** scope.
 
@@ -38,11 +38,11 @@ Go to your GitHub account...
 Note: although you can set your token to have no expiry date, for security purposes, it is recommended that you give your token an expiry date.
 :::
 
-![](pics/databricks-pat-5.PNG)
+![](pics/databricks-pat-5.png)
 
 6.  Click **Generate Token**.
 
-![](pics/databricks-pat-6.PNG)
+![](pics/databricks-pat-6.png)
 
 An access token should appear (and you will also get an email to notify you that it has been created).
 
@@ -50,7 +50,7 @@ An access token should appear (and you will also get an email to notify you that
 Note: Once you navigate away from this page, the token will disappear and **never come back again**, so make sure you copy it to the clipboard.
 :::
 
-![](pics/databricks-pat-7.PNG)
+![](pics/databricks-pat-7.png)
 
 # In Databricks
 
@@ -60,15 +60,15 @@ Within Databricks (once you've logged into UDAL and authenticated yourself as ma
 
 1.  CLick on your profile in the top right and then **Settings**.
 
-![](pics/databricks-db-1.PNG)
+![](pics/databricks-db-1.png)
 
 2.  Then click **Linked Accounts**.
 
-![](pics/databricks-db-2.PNG)
+![](pics/databricks-db-2.png)
 
 3.  Populate the form with GitHub as the Git Provider and your own user name. This is where you can paste your Personal Access Token.
 
-![](pics/databricks-db-3.PNG)
+![](pics/databricks-db-3.png)
 
 ::: callout-tip
 Remember: you can't copy and paste from outside UDAL...
@@ -86,7 +86,7 @@ Remember: you can't copy and paste from outside UDAL...
 Remember to create your repo in the nhsengland area, not your personal GitHub, otherwise when you transfer it you will lose your admin privileges! You should also add the *South East D&A Team* and the *everyone* team to the permissions.
 :::
 
-![](pics/databricks-template-1.PNG)
+![](pics/databricks-template-1.png)
 
 Now that you have a repo to clone...
 
@@ -94,23 +94,23 @@ Now that you have a repo to clone...
 
 2. In your Home (personal) area of Databricks, click **Create** and then **Git Folder**. 
 
-![](pics/databricks-git-1.PNG)
+![](pics/databricks-git-1.png)
 
 or go via the big **New** button in the top left. 
 
-![](pics/databricks-git-2.PNG)
+![](pics/databricks-git-2.png)
 
 3. Copy the repo URL into this box and give your folder a name. 
 
-![](pics/databricks-git-3.PNG)
+![](pics/databricks-git-3.png)
 
 You can get the repo URL from GitHub. Navigate to the repo and click the big **<>Code** button. 
 
-![](pics/databricks-git-4.PNG)
+![](pics/databricks-git-4.png)
 
 When you've done, it should look something like this:
 
-![](pics/databricks-git-5.PNG)
+![](pics/databricks-git-5.png)
 
 You are now ✨**Connected**✨
 
@@ -120,14 +120,14 @@ You are now ✨**Connected**✨
 
 Click on the branch name to open the Git window.
 
-![](pics/databricks-git-6.PNG)
+![](pics/databricks-git-6.png)
 
 From here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.
 
-![](pics/databricks-git-7.PNG)
+![](pics/databricks-git-7.png)
 
 ## The gitignore
 
 Any files that you want to ignore can be added to the gitignore using the relative file path.
 
-![](pics/databricks-gitignore-1.PNG)
+![](pics/databricks-gitignore-1.png)
