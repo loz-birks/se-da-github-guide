@@ -22,9 +22,6 @@ website:
         href: 4-databricks-github.qmd      
       - text: "Another Page"
         href: N-another-page.qmd
-      # - text: "Updates"
-      #   icon: "rss"
-      #   href: updates.qmd
       
 format:
   html:
