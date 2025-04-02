@@ -136,6 +136,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#maintaining-your-repo" id="toc-maintaining-your-repo" class="nav-link" data-scroll-target="#maintaining-your-repo">Maintaining your repo</a>
   <ul class="collapse">
   <li><a href="#the-git-window" id="toc-the-git-window" class="nav-link" data-scroll-target="#the-git-window">The Git Window</a></li>
+  <li><a href="#create-a-branch" id="toc-create-a-branch" class="nav-link" data-scroll-target="#create-a-branch">Create a branch</a></li>
+  <li><a href="#push-changes" id="toc-push-changes" class="nav-link" data-scroll-target="#push-changes">Push changes</a></li>
   <li><a href="#the-gitignore" id="toc-the-gitignore" class="nav-link" data-scroll-target="#the-gitignore">The gitignore</a></li>
   </ul></li>
   </ul>
@@ -238,7 +240,7 @@ Important
 <section id="connecting-with-your-token" class="level2">
 <h2 class="anchored" data-anchor-id="connecting-with-your-token">Connecting with your token</h2>
 <ol type="1">
-<li>CLick on your profile in the top right and then <strong>Settings</strong>.</li>
+<li>Click on your profile in the top right and then <strong>Settings</strong>.</li>
 </ol>
 <p><img src="pics/databricks-db-1.png" class="img-fluid"></p>
 <ol start="2" type="1">
@@ -318,7 +320,48 @@ Important
 <p>Click on the branch name to open the Git window.</p>
 <p><img src="pics/databricks-git-6.png" class="img-fluid"></p>
 <p>From here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.</p>
-<p><img src="pics/databricks-git-7.png" class="img-fluid"></p>
+<p><img src="pics/databricks-git-7.png" class="img-fluid"> ## Pull changes to the repository</p>
+<p>Make sure you get the latest version of the repo before you begin using it. Within the Git window, click <strong>Pull</strong> in the top right corner. Confirm that you’re happy to pull changes.</p>
+<p><strong>INSERT PICTURE HERE</strong></p>
+</section>
+<section id="create-a-branch" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-branch">Create a branch</h2>
+<p>Creating a branch is as simple as selecting <strong>Create Branch</strong> in the Git window and giving it a name. You can now work from this new branch.</p>
+<p><strong>INSERT PICTURE HERE</strong></p>
+<p>You can see which branch you are working from in the repository.</p>
+<p><strong>INSERT PICTURE HERE</strong></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Remember to only make changes outside of the main branch. Only fully complete and QA’d code should be on the main branch.</p>
+</div>
+</div>
+</section>
+<section id="push-changes" class="level2">
+<h2 class="anchored" data-anchor-id="push-changes">Push changes</h2>
+<p>Once you’ve made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting <strong>Commit &amp; Push</strong>. Notice that the Databricks integration pushes commits automatically.</p>
+<p><strong>INSERT PICTURE HERE</strong></p>
+<p>Pull requests can be handled and old branches deleted in the normal way on GitHub.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can assign your QA’er to the pull request to perform the QA and make the final merge.</p>
+</div>
+</div>
 </section>
 <section id="the-gitignore" class="level2">
 <h2 class="anchored" data-anchor-id="the-gitignore">The gitignore</h2>

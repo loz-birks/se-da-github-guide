@@ -125,6 +125,37 @@ Click on the branch name to open the Git window.
 From here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.
 
 ![](pics/databricks-git-7.png)
+## Pull changes to the repository
+
+Make sure you get the latest version of the repo before you begin using it. Within the Git window, click **Pull** in the top right corner. Confirm that you're happy to pull changes.
+
+**INSERT PICTURE HERE**
+
+## Create a branch
+
+Creating a branch is as simple as selecting **Create Branch** in the Git window and giving it a name. You can now work from this new branch. 
+
+**INSERT PICTURE HERE**
+
+You can see which branch you are working from in the repository. 
+
+**INSERT PICTURE HERE**
+
+::: callout-tip
+Remember to only make changes outside of the main branch. Only fully complete and QA'd code should be on the main branch. 
+:::
+
+## Push changes
+
+Once you've made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting **Commit & Push**. Notice that the Databricks integration pushes commits automatically. 
+
+**INSERT PICTURE HERE**
+
+Pull requests can be handled and old branches deleted in the normal way on GitHub. 
+
+::: callout-tip
+You can assign your QA'er to the pull request to perform the QA and make the final merge.
+:::
 
 ## The gitignore
 
