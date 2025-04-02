@@ -22,11 +22,11 @@ Go to your GitHub account...
 
 2.  Scroll down to **Developer Settings**. For me this was the bottom option in the left pane so keep scrolling!
 
-![](pics/databricks-pat-2.PNG)
+![](pics/databricks-pat-2.png)
 
 3.  Click the **Personal Access Tokens** tab on the left and then **Tokens (Classic)**.
 
-![](pics/databricks-pat-3.PNG)
+![](pics/databricks-pat-3.png)
 
 4.  Click **Generate New Token**, choose the **(Classic)** option if offered that choice.
 
