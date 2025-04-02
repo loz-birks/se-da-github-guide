@@ -3,22 +3,25 @@ project:
   output-dir: docs
 
 website:
-  title: "Publishing Your First Repo"
+  title: "All sorts of GitHub guides"
   description: "test site"
 
   navbar:
     background: light
     title: false
     collapse-below: lg
+    search: true
     left:
-      - text: "Homepage"
-        href: index.qmd
+      - text: "Your first ever repo"
+        href: 1-first-repo.qmd
       - text: "Making sense of code"
-        href: understanding-code.qmd 
+        href: 2-understanding-code.qmd 
       - text: "Version Control"
-        href: version-control.qmd         
+        href: 3-version-control.qmd   
+      - text: "GitHub in Databricks"
+        href: 4-databricks-github.qmd      
       - text: "Another Page"
-        href: second-page.qmd
+        href: N-another-page.qmd
       # - text: "Updates"
       #   icon: "rss"
       #   href: updates.qmd
