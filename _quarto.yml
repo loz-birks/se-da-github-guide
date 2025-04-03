@@ -3,9 +3,10 @@ project:
   output-dir: docs
 
 website:
-  title: "All sorts of GitHub guides"
+  title: "SE D&A GitHub Guides"
   description: "test site"
   sidebar:
+    background: light
     style: "docked"
     search: true
     contents:
@@ -13,12 +14,12 @@ website:
         contents:
           - 1-first-repo.qmd
           - 3-version-control.qmd
-	    - 4-databricks-github.qmd
-      - section: "Principles
+          - 4-databricks-github.qmd
+      - section: "Principles"
         contents:
           - 2-understanding-code.qmd
       - section: "Placeholder"
-	  contents:
+        contents:
           - N-another-page.qmd
       
 format:

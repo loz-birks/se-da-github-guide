@@ -1,39 +1,39 @@
 
   /*  nav bar start */ 
 
-.navbar-dark {
+.sidebar-dark {
    background-color: #005eb8;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.sidebar-dark .sidebar-nav .nav-link {
   background-color: #005eb8;
   color: #fff;
 }
 
-.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
+.sidebar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
   width: 26px;
   height: 26px;
   color: #fff;
   opacity: 1;
 }
 
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active {
+.sidebar-dark .sidebar-nav .show > .nav-link, .sidebar-dark .sidebar-nav .active > .nav-link, .sidebar-dark .sidebar-nav .nav-link.active {
   color: #fff;
 }
 
 @media (min-width: 992px) {
-.navbar-expand-lg .navbar-collapse {
+.sidebar-expand-lg .sidebar-collapse {
   background-color: #005eb8;
   color: #fff;
 }
 }
 
-.navbar-dark a:hover {
+.sidebar-dark a:hover {
   text-decoration: underline;
   color: #fff !important;
 }
 
-.navbar-dark a:focus {
+.sidebar-dark a:focus {
   text-decoration: underline;
   color: #fff !important;
 }
@@ -44,12 +44,12 @@
   color: #000 !important;
 }
 
-.navbar-dark .navbar-toggler {
+.sidebar-dark .sidebar-toggler {
   color: #005eb8;
   border-color: #fff;
 }
 
-.navbar-dark .navbar-toggler-icon {
+.sidebar-dark .sidebar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 24 24' id='Layer_1' version='1.1' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpolygon fill='none' points='12,23.5 12,11 22.5,5.5 22.5,17.5 ' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'/%3E%3Cpolyline fill='none' points='12,11 1.5,5.5 1.5,17.5 12,23.5 ' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'/%3E%3Cpolyline fill='none' points='1.5,5.5 12,0.5 22.5,5.5 ' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'/%3E%3Cline fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' x1='17.5' x2='17.5' y1='8.1190472' y2='20'/%3E%3Cline fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' x1='6.5' x2='6.5' y1='8.1190472' y2='20'/%3E%3Cpolyline fill='none' points='1.5,11.5 12,17 22.5,11.5 ' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'/%3E%3Cline fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' x1='6.875041' x2='17.6190472' y1='2.9404566' y2='8.0566893'/%3E%3Cline fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' x1='17.124958' x2='6.3809514' y1='2.9404562' y2='8.0566893'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 /* NHS logo
