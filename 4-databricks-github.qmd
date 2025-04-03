@@ -125,6 +125,7 @@ Click on the branch name to open the Git window.
 From here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.
 
 ![](pics/databricks-git-7.png)
+
 ## Pull changes to the repository
 
 Make sure you get the latest version of the repo before you begin using it. Within the Git window, click **Pull** in the top right corner. Confirm that you're happy to pull changes.
