@@ -157,6 +157,4 @@ In RStudio press the *Git* icon and select *Commit* from Git menu (Ctrl+Alt+M) t
 
 ![](pics/RStudio-commit.png)
 
-![]()
-
 **3. Push to the remote repository:** To push the changes to the remote GitHub repository press the *Push* button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub.
