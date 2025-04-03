@@ -207,7 +207,7 @@
     "href": "4-databricks-github.html#the-git-window",
     "title": "Using GitHub in Databricks",
     "section": "The Git Window",
-    "text": "The Git Window\nClick on the branch name to open the Git window.\n\nFrom here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.\n ## Pull changes to the repository\nMake sure you get the latest version of the repo before you begin using it. Within the Git window, click Pull in the top right corner. Confirm that you’re happy to pull changes."
+    "text": "The Git Window\nClick on the branch name to open the Git window.\n\nFrom here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane."
   },
   {
     "objectID": "4-databricks-github.html#the-gitignore",
@@ -390,5 +390,12 @@
     "title": "Using GitHub in Databricks",
     "section": "Push changes",
     "text": "Push changes\nOnce you’ve made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting Commit & Push. Notice that the Databricks integration pushes commits automatically.\n\n\n\n\n\n\n\nTip\n\n\n\nRemember that you roll back commits, so feel free to stage your commits (make multiple smaller commits) to make it easier to roll back only what you need to.\n\n\nPull requests can be handled and old branches deleted in the normal way on GitHub.\n\n\n\n\n\n\nTip\n\n\n\nYou can assign your QA’er to the pull request to perform the QA and make the final merge."
+  },
+  {
+    "objectID": "4-databricks-github.html#pull-changes-to-the-repository",
+    "href": "4-databricks-github.html#pull-changes-to-the-repository",
+    "title": "Using GitHub in Databricks",
+    "section": "Pull changes to the repository",
+    "text": "Pull changes to the repository\nMake sure you get the latest version of the repo before you begin using it. Within the Git window, click Pull in the top right corner. Confirm that you’re happy to pull changes."
   }
 ]
