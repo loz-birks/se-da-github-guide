@@ -207,7 +207,7 @@
     "href": "4-databricks-github.html#the-git-window",
     "title": "Using GitHub in Databricks",
     "section": "The Git Window",
-    "text": "The Git Window\nClick on the branch name to open the Git window.\n\nFrom here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.\n ## Pull changes to the repository\nMake sure you get the latest version of the repo before you begin using it. Within the Git window, click Pull in the top right corner. Confirm that you’re happy to pull changes.\nINSERT PICTURE HERE"
+    "text": "The Git Window\nClick on the branch name to open the Git window.\n\nFrom here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.\n ## Pull changes to the repository\nMake sure you get the latest version of the repo before you begin using it. Within the Git window, click Pull in the top right corner. Confirm that you’re happy to pull changes."
   },
   {
     "objectID": "4-databricks-github.html#the-gitignore",
@@ -375,20 +375,20 @@
     "href": "3-version-control.html#part-2-make-local-changes-commit-and-push-to-github",
     "title": "Version Control",
     "section": "Part 2: Make local changes, commit and push to GitHub",
-    "text": "Part 2: Make local changes, commit and push to GitHub\n1. Make local changes: Open the README.md file and edit and save the file.\n# RR project in RStudio\n\nRR workshop RStudio + Git repository\n\nMy first commit to GitHub with R \n2. Commit the changes: Now we commit the local changes to the local Git repository.\nIn RStudio press the Git icon and select Commit from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the Staged column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.Readme update and press the Commit button.\n\n\n3. Push to the remote repository: To push the changes to the remote GitHub repository press the Push button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub."
+    "text": "Part 2: Make local changes, commit and push to GitHub\n1. Make local changes: Open the README.md file and edit and save the file.\n# RR project in RStudio\n\nRR workshop RStudio + Git repository\n\nMy first commit to GitHub with R \n2. Commit the changes: Now we commit the local changes to the local Git repository.\nIn RStudio press the Git icon and select Commit from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the Staged column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.Readme update and press the Commit button.\n\n3. Push to the remote repository: To push the changes to the remote GitHub repository press the Push button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub."
   },
   {
     "objectID": "4-databricks-github.html#create-a-branch",
     "href": "4-databricks-github.html#create-a-branch",
     "title": "Using GitHub in Databricks",
     "section": "Create a branch",
-    "text": "Create a branch\nCreating a branch is as simple as selecting Create Branch in the Git window and giving it a name. You can now work from this new branch.\nINSERT PICTURE HERE\nYou can see which branch you are working from in the repository.\nINSERT PICTURE HERE\n\n\n\n\n\n\nTip\n\n\n\nRemember to only make changes outside of the main branch. Only fully complete and QA’d code should be on the main branch."
+    "text": "Create a branch\nCreating a branch is as simple as selecting Create Branch in the Git window and giving it a name. You can now work from this new branch.\n\nYou can see which branch you are working from in the repository.\n\n\n\n\n\n\n\nTip\n\n\n\nRemember to only make changes outside of the main branch. Only fully complete and QA’d code should be on the main branch."
   },
   {
     "objectID": "4-databricks-github.html#push-changes",
     "href": "4-databricks-github.html#push-changes",
     "title": "Using GitHub in Databricks",
     "section": "Push changes",
-    "text": "Push changes\nOnce you’ve made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting Commit & Push. Notice that the Databricks integration pushes commits automatically.\nINSERT PICTURE HERE\nPull requests can be handled and old branches deleted in the normal way on GitHub.\n\n\n\n\n\n\nTip\n\n\n\nYou can assign your QA’er to the pull request to perform the QA and make the final merge."
+    "text": "Push changes\nOnce you’ve made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting Commit & Push. Notice that the Databricks integration pushes commits automatically.\n\n\n\n\n\n\n\nTip\n\n\n\nRemember that you roll back commits, so feel free to stage your commits (make multiple smaller commits) to make it easier to roll back only what you need to.\n\n\nPull requests can be handled and old branches deleted in the normal way on GitHub.\n\n\n\n\n\n\nTip\n\n\n\nYou can assign your QA’er to the pull request to perform the QA and make the final merge."
   }
 ]
