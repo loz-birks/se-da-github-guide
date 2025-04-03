@@ -5,23 +5,21 @@ project:
 website:
   title: "All sorts of GitHub guides"
   description: "test site"
-
-  navbar:
-    background: light
-    title: false
-    collapse-below: lg
+  sidebar:
+    style: "docked"
     search: true
-    left:
-      - text: "Your first ever repo"
-        href: 1-first-repo.qmd
-      - text: "Making sense of code"
-        href: 2-understanding-code.qmd 
-      - text: "Version Control"
-        href: 3-version-control.qmd   
-      - text: "GitHub in Databricks"
-        href: 4-databricks-github.qmd      
-      - text: "Another Page"
-        href: N-another-page.qmd
+    contents:
+      - section: "GitHub Guides"
+        contents:
+          - 1-first-repo.qmd
+          - 3-version-control.qmd
+	    - 4-databricks-github.qmd
+      - section: "Principles
+        contents:
+          - 2-understanding-code.qmd
+      - section: "Placeholder"
+	  contents:
+          - N-another-page.qmd
       
 format:
   html:
