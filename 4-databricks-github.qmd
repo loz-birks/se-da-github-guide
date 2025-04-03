@@ -10,9 +10,9 @@ Many of the principles of working in a reproducible way and using GitHub for thi
 
 # Create a Personal Access Token
 
-First, we need to create a personal access token for our GitHub account. 
+First, we need to create a personal access token for our GitHub account.
 
-## In GitHub 
+## In GitHub
 
 Go to your GitHub account...
 
@@ -82,7 +82,7 @@ Remember: you can't copy and paste from outside UDAL...
 
 1.  If you do not already have a repo you want to clone, you can create one on GitHub. Feel free to use the SE github template which will initialise a repo with a gitignore, SOP folder and template, and README template with some key reporting info for you to easily edit.
 
-::: callout-important 
+::: callout-important
 Remember to create your repo in the nhsengland area, not your personal GitHub, otherwise when you transfer it you will lose your admin privileges! You should also add the *South East D&A Team* and the *everyone* team to the permissions.
 :::
 
@@ -92,19 +92,19 @@ Now that you have a repo to clone...
 
 ## Cloning a repo
 
-2. In your Home (personal) area of Databricks, click **Create** and then **Git Folder**. 
+2.  In your Home (personal) area of Databricks, click **Create** and then **Git Folder**.
 
 ![](pics/databricks-git-1.png)
 
-or go via the big **New** button in the top left. 
+or go via the big **New** button in the top left.
 
 ![](pics/databricks-git-2.png)
 
-3. Copy the repo URL into this box and give your folder a name. 
+3.  Copy the repo URL into this box and give your folder a name.
 
 ![](pics/databricks-git-3.png)
 
-You can get the repo URL from GitHub. Navigate to the repo and click the big **<>Code** button. 
+You can get the repo URL from GitHub. Navigate to the repo and click the big **\<\>Code** button.
 
 ![](pics/databricks-git-4.png)
 
@@ -136,21 +136,21 @@ Make sure you get the latest version of the repo before you begin using it. With
 
 ## Create a branch
 
-Creating a branch is as simple as selecting **Create Branch** in the Git window and giving it a name. You can now work from this new branch. 
+Creating a branch is as simple as selecting **Create Branch** in the Git window and giving it a name. You can now work from this new branch.
 
 ![](pics/databricks-git-10.png)
 
-You can see which branch you are working from in the repository. 
+You can see which branch you are working from in the repository.
 
 ![](pics/databricks-git-11.png)
 
 ::: callout-tip
-Remember to only make changes outside of the main branch. Only fully complete and QA'd code should be on the main branch. 
+Remember to only make changes outside of the main branch. Only fully complete and QA'd code should be on the main branch.
 :::
 
 ## Push changes
 
-Once you've made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting **Commit & Push**. Notice that the Databricks integration pushes commits automatically. 
+Once you've made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting **Commit & Push**. Notice that the Databricks integration pushes commits automatically.
 
 ![](pics/databricks-git-12.png)
 
@@ -158,7 +158,7 @@ Once you've made any changes, open up the Git window. Any files which have been 
 Remember that you roll back commits, so feel free to stage your commits (make multiple smaller commits) to make it easier to roll back only what you need to.
 :::
 
-Pull requests can be handled and old branches deleted in the normal way on GitHub. 
+Pull requests can be handled and old branches deleted in the normal way on GitHub.
 
 ::: callout-tip
 You can assign your QA'er to the pull request to perform the QA and make the final merge.
