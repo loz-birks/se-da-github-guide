@@ -6,14 +6,16 @@ website:
   title: "SE D&A GitHub Guides"
   description: "test site"
   sidebar:
-    background: light
+    foreground: "black"
+    background: "#EBF5FF"
     style: "docked"
     search: true
     contents:
       - section: "GitHub Guides"
         contents:
           - 1-first-repo.qmd
-          - 3-version-control.qmd
+          - 3a-r-studio.qmd
+          - 3b-vs-code.qmd
           - 4-databricks-github.qmd
       - section: "Principles"
         contents:
@@ -25,7 +27,6 @@ website:
 format:
   html:
     toc: true
-    theme: cosmo
     css: styles.css
 
 execute:
