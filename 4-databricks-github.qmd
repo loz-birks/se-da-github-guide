@@ -1,18 +1,18 @@
 ---
-title: "Using GitHub in Databricks"
+title: "GitHub in Databricks"
 ---
 
-# Aims
+## Aims
 
-Many of the principles of working in a reproducible way and using GitHub for this also apply when we use GitHub in UDAL and Databricks. We will go through the practicalities of connecting to and using your GitHub account in Databricks.
+Many of the principles of working in a reproducible way and using GitHub also apply when we use GitHub in UDAL and Databricks. We will go through the practicalities of connecting to and using your GitHub account in Databricks.
 
 ![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2NxNDAxazQzNmRmb2R6NGdlM2d1azRpbDhlNWZlaXNkMmJ2Y2J5byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11thnyggFkrmmc/giphy.gif){fig-align="center"}
 
-# Create a Personal Access Token
+## Create a Personal Access Token
 
 First, we need to create a personal access token for our GitHub account.
 
-## In GitHub
+### In GitHub
 
 Go to your GitHub account...
 
@@ -52,11 +52,11 @@ Note: Once you navigate away from this page, the token will disappear and **neve
 
 ![](pics/databricks-pat-7.png)
 
-# In Databricks
+## In Databricks
 
 Within Databricks (once you've logged into UDAL and authenticated yourself as many times as it has deemed necessary today):
 
-## Connecting with your token
+### Connecting with your token
 
 1.  Click on your profile in the top right and then **Settings**.
 
@@ -76,9 +76,9 @@ Remember: you can't copy and paste from outside UDAL...
 
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjVlNTlqaGhlOXF1b29la3d2bHdhcmwzOGp2MXRjbGV5aHp0b3N0dyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MIjrTt2chAJzF2fzL5/giphy.gif){fig-align="center"}
 
-# Working with repos
+## Working with repos
 
-## Creating a repo reminder
+### Creating a repo reminder
 
 1.  If you do not already have a repo you want to clone, you can create one on GitHub. Feel free to use the SE github template which will initialise a repo with a gitignore, SOP folder and template, and README template with some key reporting info for you to easily edit.
 
@@ -90,7 +90,7 @@ Remember to create your repo in the nhsengland area, not your personal GitHub, o
 
 Now that you have a repo to clone...
 
-## Cloning a repo
+### Cloning a repo
 
 2.  In your Home (personal) area of Databricks, click **Create** and then **Git Folder**.
 
@@ -114,9 +114,9 @@ When you've done, it should look something like this:
 
 You are now ✨**Connected**✨
 
-# Maintaining your repo
+## Maintaining your repo
 
-## The Git Window
+### The Git Window
 
 Click on the branch name to open the Git window.
 
@@ -126,7 +126,7 @@ From here you can manage branches, commits, and everything else that you might w
 
 ![](pics/databricks-git-7.png)
 
-## Pull changes to the repository
+### Pull changes to the repository
 
 Make sure you get the latest version of the repo before you begin using it. Within the Git window, click **Pull** in the top right corner. Confirm that you're happy to pull changes.
 
@@ -134,7 +134,7 @@ Make sure you get the latest version of the repo before you begin using it. With
 
 ![](pics/databricks-git-9.png)
 
-## Create a branch
+### Create a branch
 
 Creating a branch is as simple as selecting **Create Branch** in the Git window and giving it a name. You can now work from this new branch.
 
@@ -148,14 +148,14 @@ You can see which branch you are working from in the repository.
 Remember to only make changes outside of the main branch. Only fully complete and QA'd code should be on the main branch.
 :::
 
-## Push changes
+### Push changes
 
 Once you've made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting **Commit & Push**. Notice that the Databricks integration pushes commits automatically.
 
 ![](pics/databricks-git-12.png)
 
 ::: callout-tip
-Remember that you roll back commits, so feel free to stage your commits (make multiple smaller commits) to make it easier to roll back only what you need to.
+Remember that you can roll back commits, so feel free to stage your commits (make multiple smaller commits) to make it easier to roll back only what you need to.
 :::
 
 Pull requests can be handled and old branches deleted in the normal way on GitHub.
@@ -164,7 +164,7 @@ Pull requests can be handled and old branches deleted in the normal way on GitHu
 You can assign your QA'er to the pull request to perform the QA and make the final merge.
 :::
 
-## The gitignore
+### The gitignore
 
 Any files that you want to ignore can be added to the gitignore using the relative file path.
 
