@@ -60,7 +60,7 @@ We will also find this button in the **Repositories** sections on our profile an
 
 As you can see, there are several things that need filling, and some that don't. We take them from the top:
 
-1.  *Repository template*- A couple of teams have set up templates for their repos to make life easier for them e.g. if they create a lot of repos with the same structures. If you haven't created a template or don't recognise any of them, you probably want to leave this as **No template**.
+1.  *Repository template*- There is a se-template team template you can choose to use. It will initialise a repo with a gitignore, SOP folder and template, and README template with some key reporting info for you to easily edit. If you don't want to use this template, feel free to leave this as **No template**. 
 
 2.  *Owner*- Depending on where you were when you clicked the **New Repository** button, this will default to either your own account or one of your organisations. It's up to you where you store your repos but, generally, you would want to put work that you intend to share with colleagues within the organisation and keep only personal things in your own area.
 
@@ -98,7 +98,10 @@ If you have created your repo in the organisational area, you might want to move
 
 ![](pics/role-select.PNG)
 
-Your repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you've allowed them to!
+Your repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you've allowed them to! 
+::: callout-tip
+Please also add the nhsengland **everyone** team to the repo so that everyone in the organisation can see your code.
+:::
 
 ## Add files to the repo
 
