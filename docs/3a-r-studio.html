@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SE D&amp;A GitHub Guides - GitHub in Databricks</title>
+<title>SE D&amp;A GitHub Guides - GitHub in RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -80,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="./4-databricks-github.html">GitHub in Databricks</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="./3a-r-studio.html">GitHub in RStudio</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -122,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3a-r-studio.html" class="sidebar-item-text sidebar-link">
+  <a href="./3a-r-studio.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">GitHub in RStudio</span></a>
   </div>
 </li>
@@ -134,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4-databricks-github.html" class="sidebar-item-text sidebar-link active">
+  <a href="./4-databricks-github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub in Databricks</span></a>
   </div>
 </li>
@@ -184,27 +218,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#aims" id="toc-aims" class="nav-link active" data-scroll-target="#aims">Aims</a></li>
-  <li><a href="#create-a-personal-access-token" id="toc-create-a-personal-access-token" class="nav-link" data-scroll-target="#create-a-personal-access-token">Create a Personal Access Token</a>
+  <li><a href="#using-git-in-rstudio" id="toc-using-git-in-rstudio" class="nav-link active" data-scroll-target="#using-git-in-rstudio">Using Git in RStudio</a>
   <ul class="collapse">
-  <li><a href="#in-github" id="toc-in-github" class="nav-link" data-scroll-target="#in-github">In GitHub</a></li>
-  </ul></li>
-  <li><a href="#in-databricks" id="toc-in-databricks" class="nav-link" data-scroll-target="#in-databricks">In Databricks</a>
-  <ul class="collapse">
-  <li><a href="#connecting-with-your-token" id="toc-connecting-with-your-token" class="nav-link" data-scroll-target="#connecting-with-your-token">Connecting with your token</a></li>
-  </ul></li>
-  <li><a href="#working-with-repos" id="toc-working-with-repos" class="nav-link" data-scroll-target="#working-with-repos">Working with repos</a>
-  <ul class="collapse">
-  <li><a href="#creating-a-repo-reminder" id="toc-creating-a-repo-reminder" class="nav-link" data-scroll-target="#creating-a-repo-reminder">Creating a repo reminder</a></li>
-  <li><a href="#cloning-a-repo" id="toc-cloning-a-repo" class="nav-link" data-scroll-target="#cloning-a-repo">Cloning a repo</a></li>
-  </ul></li>
-  <li><a href="#maintaining-your-repo" id="toc-maintaining-your-repo" class="nav-link" data-scroll-target="#maintaining-your-repo">Maintaining your repo</a>
-  <ul class="collapse">
-  <li><a href="#the-git-window" id="toc-the-git-window" class="nav-link" data-scroll-target="#the-git-window">The Git Window</a></li>
-  <li><a href="#pull-changes-to-the-repository" id="toc-pull-changes-to-the-repository" class="nav-link" data-scroll-target="#pull-changes-to-the-repository">Pull changes to the repository</a></li>
-  <li><a href="#create-a-branch" id="toc-create-a-branch" class="nav-link" data-scroll-target="#create-a-branch">Create a branch</a></li>
-  <li><a href="#push-changes" id="toc-push-changes" class="nav-link" data-scroll-target="#push-changes">Push changes</a></li>
-  <li><a href="#the-gitignore" id="toc-the-gitignore" class="nav-link" data-scroll-target="#the-gitignore">The gitignore</a></li>
+  <li><a href="#part-1-create-a-new-rstudio-project-with-git" id="toc-part-1-create-a-new-rstudio-project-with-git" class="nav-link" data-scroll-target="#part-1-create-a-new-rstudio-project-with-git">Part 1: Create a new RStudio project with Git</a></li>
+  <li><a href="#part-2-make-local-changes-commit-and-push-to-github" id="toc-part-2-make-local-changes-commit-and-push-to-github" class="nav-link" data-scroll-target="#part-2-make-local-changes-commit-and-push-to-github">Part 2: Make local changes, commit and push to GitHub</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -212,9 +229,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="./4-databricks-github.html">GitHub in Databricks</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="./3a-r-studio.html">GitHub in RStudio</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">GitHub in Databricks</h1>
+<h1 class="title">GitHub in RStudio</h1>
 </div>
 
 
@@ -231,225 +248,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="aims" class="level2">
-<h2 class="anchored" data-anchor-id="aims">Aims</h2>
-<p>Many of the principles of working in a reproducible way and using GitHub also apply when we use GitHub in UDAL and Databricks. We will go through the practicalities of connecting to and using your GitHub account in Databricks.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2NxNDAxazQzNmRmb2R6NGdlM2d1azRpbDhlNWZlaXNkMmJ2Y2J5byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11thnyggFkrmmc/giphy.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
+<section id="using-git-in-rstudio" class="level1">
+<h1>Using Git in RStudio</h1>
+<section id="part-1-create-a-new-rstudio-project-with-git" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-create-a-new-rstudio-project-with-git">Part 1: Create a new RStudio project with Git</h2>
+<p>There are three ways to create version control for a RStudio project.</p>
+<p>a) <strong>Create a new project and create a local Git repository:</strong> Select <em>File &gt; New Project..</em>, create a project from a <em>New Directory</em> and check the option <em>Create a git repository</em>. In order to push to a remote repository later on you add that remote repository by using the Git shell. If you already know which online repository you want to use for your projects, option c) is more convenient.</p>
+<p>b) <strong>Create a new project from a folder under version control:</strong> In this case you only need to create a new RStudio project for that directory and version control is automatically enabled. Go to <em>File &gt; New Project</em>, select create a new project from an <em>Existing Directory</em> and create the project.</p>
+<p>c) <strong>Create a new project based on a remote Git repository:</strong> Select <em>File &gt; New Project..</em> and from the opening menu select to create a new project from <em>Version Control</em>, Choose Git, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the the repository you want to clone and create the project.</p>
+<p>In this tutorial we <strong>create a project based on a remote GitHub repository</strong> (option c). Hence we first create a new repository on GitHub and create our GitHub project from that repository.</p>
+<p><strong>1. Create a new GitHub repository:</strong> Login to your GitHub account and create a new GitHub repository. Give your new repository a short and memorable name e.g.&nbsp;<code>rstudio-git-test</code>, check the option to initialize this repository with a README and create the repository.</p>
+<p><strong>2. Copy the repository HTTPS url:</strong> To create a new Git based project in RStudio, we need the repository url. You find the repository HTTPS url on the just created GitHub project page. There press the button <em>&lt;&gt; Code</em> (green button) and copy the HTTPS link of the project by clicking the little icon to the right of the URL. The link will be something like <code>https://github.com/yourusername/rstudio-git-test.git</code>.</p>
+<p><strong>3. Create a new RStudio project with Git version control:</strong> Now everything is ready to create a new project with Git version control in RStudio. In RStudio Select <em>File &gt; New Project..</em>, select <em>Version Control</em>, Choose <em>Git</em>, then provide the repository HTTPS link, select the R workspace folder and create the project. RStudio now copies (<em>clone</em> in Git terms) the content of the repository to your project folder. The content of the GitHub repository should now appear in the Files pane of RStudio and you should see there the created <code>README.md</code>.</p>
+<p><img src="pics/RStudio-clone-git-project.gif" class="img-fluid"></p>
 </section>
-<section id="create-a-personal-access-token" class="level2">
-<h2 class="anchored" data-anchor-id="create-a-personal-access-token">Create a Personal Access Token</h2>
-<p>First, we need to create a personal access token for our GitHub account.</p>
-<section id="in-github" class="level3">
-<h3 class="anchored" data-anchor-id="in-github">In GitHub</h3>
-<p>Go to your GitHub account…</p>
-<ol type="1">
-<li>Click on your profile photo and go to <strong>settings</strong>.</li>
-</ol>
-<p><img src="pics/databricks-pat-1.png" class="img-fluid"></p>
-<ol start="2" type="1">
-<li>Scroll down to <strong>Developer Settings</strong>. For me this was the bottom option in the left pane so keep scrolling!</li>
-</ol>
-<p><img src="pics/databricks-pat-2.png" class="img-fluid"></p>
-<ol start="3" type="1">
-<li>Click the <strong>Personal Access Tokens</strong> tab on the left and then <strong>Tokens (Classic)</strong>.</li>
-</ol>
-<p><img src="pics/databricks-pat-3.png" class="img-fluid"></p>
-<ol start="4" type="1">
-<li>Click <strong>Generate New Token</strong>, choose the <strong>(Classic)</strong> option if offered that choice.</li>
-</ol>
-<p><img src="pics/databricks-pat-4.png" class="img-fluid"></p>
-<ol start="5" type="1">
-<li>Enter a name for your token. Help yourself out here and give it a sensible name… Give the token all the <strong>repo</strong> scope and, if you use GitHub actions, also select the <strong>workflow</strong> scope.</li>
-</ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Note: although you can set your token to have no expiry date, for security purposes, it is recommended that you give your token an expiry date.</p>
-</div>
-</div>
-<p><img src="pics/databricks-pat-5.png" class="img-fluid"></p>
-<ol start="6" type="1">
-<li>Click <strong>Generate Token</strong>.</li>
-</ol>
-<p><img src="pics/databricks-pat-6.png" class="img-fluid"></p>
-<p>An access token should appear (and you will also get an email to notify you that it has been created).</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Note: Once you navigate away from this page, the token will disappear and <strong>never come back again</strong>, so make sure you copy it to the clipboard.</p>
-</div>
-</div>
-<p><img src="pics/databricks-pat-7.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="in-databricks" class="level2">
-<h2 class="anchored" data-anchor-id="in-databricks">In Databricks</h2>
-<p>Within Databricks (once you’ve logged into UDAL and authenticated yourself as many times as it has deemed necessary today):</p>
-<section id="connecting-with-your-token" class="level3">
-<h3 class="anchored" data-anchor-id="connecting-with-your-token">Connecting with your token</h3>
-<ol type="1">
-<li>Click on your profile in the top right and then <strong>Settings</strong>.</li>
-</ol>
-<p><img src="pics/databricks-db-1.png" class="img-fluid"></p>
-<ol start="2" type="1">
-<li>Then click <strong>Linked Accounts</strong>.</li>
-</ol>
-<p><img src="pics/databricks-db-2.png" class="img-fluid"></p>
-<ol start="3" type="1">
-<li>Populate the form with GitHub as the Git Provider and your own user name. This is where you can paste your Personal Access Token.</li>
-</ol>
-<p><img src="pics/databricks-db-3.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Remember: you can’t copy and paste from outside UDAL…</p>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjVlNTlqaGhlOXF1b29la3d2bHdhcmwzOGp2MXRjbGV5aHp0b3N0dyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MIjrTt2chAJzF2fzL5/giphy.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-</section>
-<section id="working-with-repos" class="level2">
-<h2 class="anchored" data-anchor-id="working-with-repos">Working with repos</h2>
-<section id="creating-a-repo-reminder" class="level3">
-<h3 class="anchored" data-anchor-id="creating-a-repo-reminder">Creating a repo reminder</h3>
-<ol type="1">
-<li>If you do not already have a repo you want to clone, you can create one on GitHub. Feel free to use the SE github template which will initialise a repo with a gitignore, SOP folder and template, and README template with some key reporting info for you to easily edit.</li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Remember to create your repo in the nhsengland area, not your personal GitHub, otherwise when you transfer it you will lose your admin privileges! You should also add the <em>South East D&amp;A Team</em> and the <em>everyone</em> team to the permissions.</p>
-</div>
-</div>
-<p><img src="pics/databricks-template-1.png" class="img-fluid"></p>
-<p>Now that you have a repo to clone…</p>
-</section>
-<section id="cloning-a-repo" class="level3">
-<h3 class="anchored" data-anchor-id="cloning-a-repo">Cloning a repo</h3>
-<ol start="2" type="1">
-<li>In your Home (personal) area of Databricks, click <strong>Create</strong> and then <strong>Git Folder</strong>.</li>
-</ol>
-<p><img src="pics/databricks-git-1.png" class="img-fluid"></p>
-<p>or go via the big <strong>New</strong> button in the top left.</p>
-<p><img src="pics/databricks-git-2.png" class="img-fluid"></p>
-<ol start="3" type="1">
-<li>Copy the repo URL into this box and give your folder a name.</li>
-</ol>
-<p><img src="pics/databricks-git-3.png" class="img-fluid"></p>
-<p>You can get the repo URL from GitHub. Navigate to the repo and click the big <strong>&lt;&gt;Code</strong> button.</p>
-<p><img src="pics/databricks-git-4.png" class="img-fluid"></p>
-<p>When you’ve done, it should look something like this:</p>
-<p><img src="pics/databricks-git-5.png" class="img-fluid"></p>
-<p>You are now ✨<strong>Connected</strong>✨</p>
-</section>
-</section>
-<section id="maintaining-your-repo" class="level2">
-<h2 class="anchored" data-anchor-id="maintaining-your-repo">Maintaining your repo</h2>
-<section id="the-git-window" class="level3">
-<h3 class="anchored" data-anchor-id="the-git-window">The Git Window</h3>
-<p>Click on the branch name to open the Git window.</p>
-<p><img src="pics/databricks-git-6.png" class="img-fluid"></p>
-<p>From here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.</p>
-<p><img src="pics/databricks-git-7.png" class="img-fluid"></p>
-</section>
-<section id="pull-changes-to-the-repository" class="level3">
-<h3 class="anchored" data-anchor-id="pull-changes-to-the-repository">Pull changes to the repository</h3>
-<p>Make sure you get the latest version of the repo before you begin using it. Within the Git window, click <strong>Pull</strong> in the top right corner. Confirm that you’re happy to pull changes.</p>
-<p><img src="pics/databricks-git-8.png" class="img-fluid"></p>
-<p><img src="pics/databricks-git-9.png" class="img-fluid"></p>
-</section>
-<section id="create-a-branch" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-branch">Create a branch</h3>
-<p>Creating a branch is as simple as selecting <strong>Create Branch</strong> in the Git window and giving it a name. You can now work from this new branch.</p>
-<p><img src="pics/databricks-git-10.png" class="img-fluid"></p>
-<p>You can see which branch you are working from in the repository.</p>
-<p><img src="pics/databricks-git-11.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Remember to only make changes outside of the main branch. Only fully complete and QA’d code should be on the main branch.</p>
-</div>
-</div>
-</section>
-<section id="push-changes" class="level3">
-<h3 class="anchored" data-anchor-id="push-changes">Push changes</h3>
-<p>Once you’ve made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting <strong>Commit &amp; Push</strong>. Notice that the Databricks integration pushes commits automatically.</p>
-<p><img src="pics/databricks-git-12.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Remember that you can roll back commits, so feel free to stage your commits (make multiple smaller commits) to make it easier to roll back only what you need to.</p>
-</div>
-</div>
-<p>Pull requests can be handled and old branches deleted in the normal way on GitHub.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You can assign your QA’er to the pull request to perform the QA and make the final merge.</p>
-</div>
-</div>
-</section>
-<section id="the-gitignore" class="level3">
-<h3 class="anchored" data-anchor-id="the-gitignore">The gitignore</h3>
-<p>Any files that you want to ignore can be added to the gitignore using the relative file path.</p>
-<p><img src="pics/databricks-gitignore-1.png" class="img-fluid"></p>
+<section id="part-2-make-local-changes-commit-and-push-to-github" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-make-local-changes-commit-and-push-to-github">Part 2: Make local changes, commit and push to GitHub</h2>
+<p><strong>1. Make local changes:</strong> Open the <code>README.md</code> file and edit and save the file.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># RR project in RStudio</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>RR workshop RStudio <span class="sc">+</span> Git repository</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>My first commit to GitHub with R </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>2. Commit the changes:</strong> Now we commit the local changes to the local Git repository.<br>
+In RStudio press the <em>Git</em> icon and select <em>Commit</em> from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the <em>Staged</em> column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.<code>Readme update</code> and press the <em>Commit</em> button.</p>
+<p><img src="pics/RStudio-commit.png" class="img-fluid"></p>
+<p><strong>3. Push to the remote repository:</strong> To push the changes to the remote GitHub repository press the <em>Push</em> button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub.</p>
 
 
 </section>

@@ -170,78 +170,78 @@
   {
     "objectID": "4-databricks-github.html",
     "href": "4-databricks-github.html",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "",
-    "text": "Many of the principles of working in a reproducible way and using GitHub for this also apply when we use GitHub in UDAL and Databricks. We will go through the practicalities of connecting to and using your GitHub account in Databricks.",
+    "text": "Many of the principles of working in a reproducible way and using GitHub also apply when we use GitHub in UDAL and Databricks. We will go through the practicalities of connecting to and using your GitHub account in Databricks.",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
     ]
   },
   {
     "objectID": "4-databricks-github.html#in-github",
     "href": "4-databricks-github.html#in-github",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "In GitHub",
     "text": "In GitHub\nGo to your GitHub account…\n\nClick on your profile photo and go to settings.\n\n\n\nScroll down to Developer Settings. For me this was the bottom option in the left pane so keep scrolling!\n\n\n\nClick the Personal Access Tokens tab on the left and then Tokens (Classic).\n\n\n\nClick Generate New Token, choose the (Classic) option if offered that choice.\n\n\n\nEnter a name for your token. Help yourself out here and give it a sensible name… Give the token all the repo scope and, if you use GitHub actions, also select the workflow scope.\n\n\n\n\n\n\n\nTip\n\n\n\nNote: although you can set your token to have no expiry date, for security purposes, it is recommended that you give your token an expiry date.\n\n\n\n\nClick Generate Token.\n\n\nAn access token should appear (and you will also get an email to notify you that it has been created).\n\n\n\n\n\n\nImportant\n\n\n\nNote: Once you navigate away from this page, the token will disappear and never come back again, so make sure you copy it to the clipboard.",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
     ]
   },
   {
     "objectID": "4-databricks-github.html#connecting-with-your-token",
     "href": "4-databricks-github.html#connecting-with-your-token",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "Connecting with your token",
     "text": "Connecting with your token\n\nClick on your profile in the top right and then Settings.\n\n\n\nThen click Linked Accounts.\n\n\n\nPopulate the form with GitHub as the Git Provider and your own user name. This is where you can paste your Personal Access Token.\n\n\n\n\n\n\n\n\nTip\n\n\n\nRemember: you can’t copy and paste from outside UDAL…",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
     ]
   },
   {
     "objectID": "4-databricks-github.html#creating-a-repo-reminder",
     "href": "4-databricks-github.html#creating-a-repo-reminder",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "Creating a repo reminder",
     "text": "Creating a repo reminder\n\nIf you do not already have a repo you want to clone, you can create one on GitHub. Feel free to use the SE github template which will initialise a repo with a gitignore, SOP folder and template, and README template with some key reporting info for you to easily edit.\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to create your repo in the nhsengland area, not your personal GitHub, otherwise when you transfer it you will lose your admin privileges! You should also add the South East D&A Team and the everyone team to the permissions.\n\n\n\nNow that you have a repo to clone…",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
     ]
   },
   {
     "objectID": "4-databricks-github.html#cloning-a-repo",
     "href": "4-databricks-github.html#cloning-a-repo",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "Cloning a repo",
     "text": "Cloning a repo\n\nIn your Home (personal) area of Databricks, click Create and then Git Folder.\n\n\nor go via the big New button in the top left.\n\n\nCopy the repo URL into this box and give your folder a name.\n\n\nYou can get the repo URL from GitHub. Navigate to the repo and click the big &lt;&gt;Code button.\n\nWhen you’ve done, it should look something like this:\n\nYou are now ✨Connected✨",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
     ]
   },
   {
     "objectID": "4-databricks-github.html#the-git-window",
     "href": "4-databricks-github.html#the-git-window",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "The Git Window",
     "text": "The Git Window\nClick on the branch name to open the Git window.\n\nFrom here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
     ]
   },
   {
     "objectID": "4-databricks-github.html#the-gitignore",
     "href": "4-databricks-github.html#the-gitignore",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "The gitignore",
     "text": "The gitignore\nAny files that you want to ignore can be added to the gitignore using the relative file path.",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
     ]
   },
   {
@@ -392,7 +392,7 @@
     "href": "1-first-repo.html#sec-createrepo",
     "title": "Publishing Your First Repo",
     "section": "Create the repo",
-    "text": "Create the repo\nWhen we first log in to GitHub, our homepage will look something like this. To create a repo, click the green New button in the left hand Top Repositories section.\n\nWe will also find this button in the Repositories sections on our profile and within any organisations that we are part of. They all lead to the same place. Which is here:\n\nUnpopulatedPopulated\n\n\n\n\n\n\n\n\n\nAs you can see, there are several things that need filling, and some that don’t. We take them from the top:\n\nRepository template- A couple of teams have set up templates for their repos to make life easier for them e.g. if they create a lot of repos with the same structures. If you haven’t created a template or don’t recognise any of them, you probably want to leave this as No template.\nOwner- Depending on where you were when you clicked the New Repository button, this will default to either your own account or one of your organisations. It’s up to you where you store your repos but, generally, you would want to put work that you intend to share with colleagues within the organisation and keep only personal things in your own area.\nRepository name- This should be a unique name that is short but reasonably descriptive. GitHub will handily tell you if the name is already in use somewhere else. Repo names shouldn’t include spaces but don’t worry if you forget, GitHub will replace spaces with hyphens.\nDescription- Although this field is optional, it’s a good idea to put something in here to help you (and others) quickly identify what the code is.\nPublic / Private- If you select Public then anyone anywhere can see your repo and the code within it. Selecting Private means that only those within the organisation (if the owner is an organisation) can see the code. Generally, this should be the default option- you can always change the privacy later.\nAdd a README file- Again, this is optional but generally a good idea. It will automatically create a markdown file with the repo name as the title and the description as the contents. You can then add details about the project including inputs, outputs, purpose, methodology etc. which will help you and others trying to use your code later.\nAdd .gitignore- A gitignore file tells GitHub which files to not look at and not publish. This could be things like data or personal user keys that you don’t want to share. We will use these more when we look at using GitHub Desktop but it is less important if you just plan to upload files manually.\nChoose a license- This just tells people what they can do with their code. You can leave this as None if you want or, if you’re happy for people to use and replicate your code as they please, you might choose the MIT License.\n\nNow you can click Create repository.",
+    "text": "Create the repo\nWhen we first log in to GitHub, our homepage will look something like this. To create a repo, click the green New button in the left hand Top Repositories section.\n\nWe will also find this button in the Repositories sections on our profile and within any organisations that we are part of. They all lead to the same place. Which is here:\n\nUnpopulatedPopulated\n\n\n\n\n\n\n\n\n\nAs you can see, there are several things that need filling, and some that don’t. We take them from the top:\n\nRepository template- There is a se-template team template you can choose to use. It will initialise a repo with a gitignore, SOP folder and template, and README template with some key reporting info for you to easily edit. If you don’t want to use this template, feel free to leave this as No template.\nOwner- Depending on where you were when you clicked the New Repository button, this will default to either your own account or one of your organisations. It’s up to you where you store your repos but, generally, you would want to put work that you intend to share with colleagues within the organisation and keep only personal things in your own area.\nRepository name- This should be a unique name that is short but reasonably descriptive. GitHub will handily tell you if the name is already in use somewhere else. Repo names shouldn’t include spaces but don’t worry if you forget, GitHub will replace spaces with hyphens.\nDescription- Although this field is optional, it’s a good idea to put something in here to help you (and others) quickly identify what the code is.\nPublic / Private- If you select Public then anyone anywhere can see your repo and the code within it. Selecting Private means that only those within the organisation (if the owner is an organisation) can see the code. Generally, this should be the default option- you can always change the privacy later.\nAdd a README file- Again, this is optional but generally a good idea. It will automatically create a markdown file with the repo name as the title and the description as the contents. You can then add details about the project including inputs, outputs, purpose, methodology etc. which will help you and others trying to use your code later.\nAdd .gitignore- A gitignore file tells GitHub which files to not look at and not publish. This could be things like data or personal user keys that you don’t want to share. We will use these more when we look at using GitHub Desktop but it is less important if you just plan to upload files manually.\nChoose a license- This just tells people what they can do with their code. You can leave this as None if you want or, if you’re happy for people to use and replicate your code as they please, you might choose the MIT License.\n\nNow you can click Create repository.",
     "crumbs": [
       "GitHub Guides",
       "Publishing Your First Repo"
@@ -403,7 +403,7 @@
     "href": "1-first-repo.html#move-the-repo-to-the-team-area",
     "title": "Publishing Your First Repo",
     "section": "Move the repo to the team area",
-    "text": "Move the repo to the team area\nIf you have created your repo in the organisational area, you might want to move it to live in the South East area. This is very simple.\n\nNavigate to the repo and click the Settings button\n\n\n\nWithin the Access section, click Collaborators and teams (top left), and click Add teams\n\n\n\nFinally search for and select South East D&A\n\n\n\nChoose what role you want your team members to have\n\n\nYour repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you’ve allowed them to!",
+    "text": "Move the repo to the team area\nIf you have created your repo in the organisational area, you might want to move it to live in the South East area. This is very simple.\n\nNavigate to the repo and click the Settings button\n\n\n\nWithin the Access section, click Collaborators and teams (top left), and click Add teams\n\n\n\nFinally search for and select South East D&A\n\n\n\nChoose what role you want your team members to have\n\n\nYour repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you’ve allowed them to! ::: callout-tip Please also add the nhsengland everyone team to the repo so that everyone in the organisation can see your code. :::",
     "crumbs": [
       "GitHub Guides",
       "Publishing Your First Repo"
@@ -500,34 +500,133 @@
   {
     "objectID": "4-databricks-github.html#create-a-branch",
     "href": "4-databricks-github.html#create-a-branch",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "Create a branch",
     "text": "Create a branch\nCreating a branch is as simple as selecting Create Branch in the Git window and giving it a name. You can now work from this new branch.\n\nYou can see which branch you are working from in the repository.\n\n\n\n\n\n\n\nTip\n\n\n\nRemember to only make changes outside of the main branch. Only fully complete and QA’d code should be on the main branch.",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
     ]
   },
   {
     "objectID": "4-databricks-github.html#push-changes",
     "href": "4-databricks-github.html#push-changes",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "Push changes",
-    "text": "Push changes\nOnce you’ve made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting Commit & Push. Notice that the Databricks integration pushes commits automatically.\n\n\n\n\n\n\n\nTip\n\n\n\nRemember that you roll back commits, so feel free to stage your commits (make multiple smaller commits) to make it easier to roll back only what you need to.\n\n\nPull requests can be handled and old branches deleted in the normal way on GitHub.\n\n\n\n\n\n\nTip\n\n\n\nYou can assign your QA’er to the pull request to perform the QA and make the final merge.",
+    "text": "Push changes\nOnce you’ve made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting Commit & Push. Notice that the Databricks integration pushes commits automatically.\n\n\n\n\n\n\n\nTip\n\n\n\nRemember that you can roll back commits, so feel free to stage your commits (make multiple smaller commits) to make it easier to roll back only what you need to.\n\n\nPull requests can be handled and old branches deleted in the normal way on GitHub.\n\n\n\n\n\n\nTip\n\n\n\nYou can assign your QA’er to the pull request to perform the QA and make the final merge.",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
     ]
   },
   {
     "objectID": "4-databricks-github.html#pull-changes-to-the-repository",
     "href": "4-databricks-github.html#pull-changes-to-the-repository",
-    "title": "Using GitHub in Databricks",
+    "title": "GitHub in Databricks",
     "section": "Pull changes to the repository",
     "text": "Pull changes to the repository\nMake sure you get the latest version of the repo before you begin using it. Within the Git window, click Pull in the top right corner. Confirm that you’re happy to pull changes.",
     "crumbs": [
       "GitHub Guides",
-      "Using GitHub in Databricks"
+      "GitHub in Databricks"
+    ]
+  },
+  {
+    "objectID": "3b-vs-code.html",
+    "href": "3b-vs-code.html",
+    "title": "GitHub in VS Code",
+    "section": "",
+    "text": "Setting up Git in VSCode\nBefore we get started using Git in VSCode, for the first time only, it needs to be configured. Yes, it uses the Terminal window, but it’s not scary!\nThis can be done either by: - Open ‘Terminal’ from the search on your desktop taskbar - Open ‘Terminal’ in VSCode (‘View’ -&gt; ‘Terminal’)\nIn either one, type in the following: git config –global user.name “githubusername” &lt;- Enter your own GitHub username in the quotations, then hit enter git config –global user.email “email@nhs.net” &lt;- Enter your own email address associated with your GitHub account in the quotations, then hit enter\nThat’s it :star:\n\n\nInitialising a repository\nCreate the repo before you start coding Create the repo before you start coding Create the repo before you start coding\nThe best thing to do is to create the repo before (or as soon to the beginning as possible) starting writing your actual code. Think of it as this: you wouldn’t work on a big excel file without saving first, in case you lost it. The same applies here.\nThe way that Git works, you work on files saved in a local folder, then push to GitHub when you’re done (so you’re never working directly in GitHub). So, to start, you need to create a local blank folder for you to start with (or where you existing folder is). Recommendation is to create a ‘GitHub’ folder in your OneDrive, where the repo folders can sit.\nTo intisialise a repo, click the Source Control button on the left panel:\n\nClick ‘Open Folder’ and navigate to the repo folder (in your ‘OneDrive’ folder). Note: you may be asked whether you trust the authors of the files in the folder. Usually this is yes, as it’s from your own OneDrive.\nNow we’ve selected the folder, we can now initialise the repository:\n\nThis won’t yet appear on the GitHub web browser (as we haven’t published yet) - we will get to that.\n\n\nCloning a repository\nIf, instead of creating your own repo from scratch, you want to take something someone else has done for yourself, you can clone the repo. To do this, click ‘Clone Repository’ instead:\n\n(Note: if you’re already working on a repo, you can clear what you’re working on by opening a new window (File -&gt; New window) or by closing the current folder (File -&gt; Close folder)).\nIn the top bar, click ‘Clone from GitHub’ and start typing for the repo you want.\n\nSave to your ‘OneDrive’ folder. You can now work on the files.\n\n\nBranching\nNow, the whole point of GitHub is to work collaboratively, so there will be times where you want to clone someone’s repo and make your own additions. This is also best practice for your own repos: when adding a new development, create a new branch. Never work in ‘main’.\nThis is where branches come in.\nOnce you’ve cloned a repo, ensure you are in your Source Control view and click the ‘…’ as shown below.\n\nAnd enter the desired branch name (e.g. ‘dev’)\n\nSwitching branches: you can switch branches within VSCode in the bottom left of the screen:\n\nIn your branch, you can work on you script, add and delete files etc. If you want, it can be merged to the ‘main’ branch, which we will again get to…\n\n\nTracking and staging\nOnce you’ve done the above, you can now make changes to the repository. This could be: - Changing an existing file (e.g. adding new lines of code) - Adding new files (including codefiles) into the repo - Removing files from the repo (be careful of dependencies!)\nThis is where the real power of GitHub comes in - tracking changes without losing what you’ve already done.\nFirst, another best practice to remember: COMMIT OFTEN, PERFECT LATER, PUBLISH ONCE\nIf you commit smaller changes it’s far easier to go back if you’ve made a mistake and saves more work down the line. Again, think of it as saving an excel workbook.\nThe how to bit: Once you’ve changed something, navigate to the Source Control tab again. You’ll see a ‘changes’ section in the source control, as below.\n\n\nCommit\nIncluding a bit on the Git Log\n\n\nGit restore\n\n\nMerge\n\n\nMerge conflicts\n\n\nGit Log\n\n\ndiff\n\n\nRoll back\n\n\nGit revert\n\n\nPublishing an existing repo\n\n\nPush and pull\n\n\nForking and cloning\n\n\nPull requests\n\n\nIssues",
+    "crumbs": [
+      "GitHub Guides",
+      "GitHub in VS Code"
+    ]
+  },
+  {
+    "objectID": "3a-r-studio.html",
+    "href": "3a-r-studio.html",
+    "title": "GitHub in RStudio",
+    "section": "",
+    "text": "There are three ways to create version control for a RStudio project.\na) Create a new project and create a local Git repository: Select File &gt; New Project.., create a project from a New Directory and check the option Create a git repository. In order to push to a remote repository later on you add that remote repository by using the Git shell. If you already know which online repository you want to use for your projects, option c) is more convenient.\nb) Create a new project from a folder under version control: In this case you only need to create a new RStudio project for that directory and version control is automatically enabled. Go to File &gt; New Project, select create a new project from an Existing Directory and create the project.\nc) Create a new project based on a remote Git repository: Select File &gt; New Project.. and from the opening menu select to create a new project from Version Control, Choose Git, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the the repository you want to clone and create the project.\nIn this tutorial we create a project based on a remote GitHub repository (option c). Hence we first create a new repository on GitHub and create our GitHub project from that repository.\n1. Create a new GitHub repository: Login to your GitHub account and create a new GitHub repository. Give your new repository a short and memorable name e.g. rstudio-git-test, check the option to initialize this repository with a README and create the repository.\n2. Copy the repository HTTPS url: To create a new Git based project in RStudio, we need the repository url. You find the repository HTTPS url on the just created GitHub project page. There press the button &lt;&gt; Code (green button) and copy the HTTPS link of the project by clicking the little icon to the right of the URL. The link will be something like https://github.com/yourusername/rstudio-git-test.git.\n3. Create a new RStudio project with Git version control: Now everything is ready to create a new project with Git version control in RStudio. In RStudio Select File &gt; New Project.., select Version Control, Choose Git, then provide the repository HTTPS link, select the R workspace folder and create the project. RStudio now copies (clone in Git terms) the content of the repository to your project folder. The content of the GitHub repository should now appear in the Files pane of RStudio and you should see there the created README.md.\n\n\n\n\n1. Make local changes: Open the README.md file and edit and save the file.\n# RR project in RStudio\n\nRR workshop RStudio + Git repository\n\nMy first commit to GitHub with R \n2. Commit the changes: Now we commit the local changes to the local Git repository.\nIn RStudio press the Git icon and select Commit from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the Staged column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.Readme update and press the Commit button.\n\n3. Push to the remote repository: To push the changes to the remote GitHub repository press the Push button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub.",
+    "crumbs": [
+      "GitHub Guides",
+      "GitHub in RStudio"
+    ]
+  },
+  {
+    "objectID": "3a-r-studio.html#part-1-create-a-new-rstudio-project-with-git",
+    "href": "3a-r-studio.html#part-1-create-a-new-rstudio-project-with-git",
+    "title": "GitHub in RStudio",
+    "section": "",
+    "text": "There are three ways to create version control for a RStudio project.\na) Create a new project and create a local Git repository: Select File &gt; New Project.., create a project from a New Directory and check the option Create a git repository. In order to push to a remote repository later on you add that remote repository by using the Git shell. If you already know which online repository you want to use for your projects, option c) is more convenient.\nb) Create a new project from a folder under version control: In this case you only need to create a new RStudio project for that directory and version control is automatically enabled. Go to File &gt; New Project, select create a new project from an Existing Directory and create the project.\nc) Create a new project based on a remote Git repository: Select File &gt; New Project.. and from the opening menu select to create a new project from Version Control, Choose Git, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the the repository you want to clone and create the project.\nIn this tutorial we create a project based on a remote GitHub repository (option c). Hence we first create a new repository on GitHub and create our GitHub project from that repository.\n1. Create a new GitHub repository: Login to your GitHub account and create a new GitHub repository. Give your new repository a short and memorable name e.g. rstudio-git-test, check the option to initialize this repository with a README and create the repository.\n2. Copy the repository HTTPS url: To create a new Git based project in RStudio, we need the repository url. You find the repository HTTPS url on the just created GitHub project page. There press the button &lt;&gt; Code (green button) and copy the HTTPS link of the project by clicking the little icon to the right of the URL. The link will be something like https://github.com/yourusername/rstudio-git-test.git.\n3. Create a new RStudio project with Git version control: Now everything is ready to create a new project with Git version control in RStudio. In RStudio Select File &gt; New Project.., select Version Control, Choose Git, then provide the repository HTTPS link, select the R workspace folder and create the project. RStudio now copies (clone in Git terms) the content of the repository to your project folder. The content of the GitHub repository should now appear in the Files pane of RStudio and you should see there the created README.md.",
+    "crumbs": [
+      "GitHub Guides",
+      "GitHub in RStudio"
+    ]
+  },
+  {
+    "objectID": "3a-r-studio.html#part-2-make-local-changes-commit-and-push-to-github",
+    "href": "3a-r-studio.html#part-2-make-local-changes-commit-and-push-to-github",
+    "title": "GitHub in RStudio",
+    "section": "",
+    "text": "1. Make local changes: Open the README.md file and edit and save the file.\n# RR project in RStudio\n\nRR workshop RStudio + Git repository\n\nMy first commit to GitHub with R \n2. Commit the changes: Now we commit the local changes to the local Git repository.\nIn RStudio press the Git icon and select Commit from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the Staged column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.Readme update and press the Commit button.\n\n3. Push to the remote repository: To push the changes to the remote GitHub repository press the Push button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub.",
+    "crumbs": [
+      "GitHub Guides",
+      "GitHub in RStudio"
+    ]
+  },
+  {
+    "objectID": "4-databricks-github.html#aims",
+    "href": "4-databricks-github.html#aims",
+    "title": "GitHub in Databricks",
+    "section": "",
+    "text": "Many of the principles of working in a reproducible way and using GitHub also apply when we use GitHub in UDAL and Databricks. We will go through the practicalities of connecting to and using your GitHub account in Databricks.",
+    "crumbs": [
+      "GitHub Guides",
+      "GitHub in Databricks"
+    ]
+  },
+  {
+    "objectID": "4-databricks-github.html#create-a-personal-access-token",
+    "href": "4-databricks-github.html#create-a-personal-access-token",
+    "title": "GitHub in Databricks",
+    "section": "Create a Personal Access Token",
+    "text": "Create a Personal Access Token\nFirst, we need to create a personal access token for our GitHub account.\n\nIn GitHub\nGo to your GitHub account…\n\nClick on your profile photo and go to settings.\n\n\n\nScroll down to Developer Settings. For me this was the bottom option in the left pane so keep scrolling!\n\n\n\nClick the Personal Access Tokens tab on the left and then Tokens (Classic).\n\n\n\nClick Generate New Token, choose the (Classic) option if offered that choice.\n\n\n\nEnter a name for your token. Help yourself out here and give it a sensible name… Give the token all the repo scope and, if you use GitHub actions, also select the workflow scope.\n\n\n\n\n\n\n\nTip\n\n\n\nNote: although you can set your token to have no expiry date, for security purposes, it is recommended that you give your token an expiry date.\n\n\n\n\nClick Generate Token.\n\n\nAn access token should appear (and you will also get an email to notify you that it has been created).\n\n\n\n\n\n\nImportant\n\n\n\nNote: Once you navigate away from this page, the token will disappear and never come back again, so make sure you copy it to the clipboard.",
+    "crumbs": [
+      "GitHub Guides",
+      "GitHub in Databricks"
+    ]
+  },
+  {
+    "objectID": "4-databricks-github.html#in-databricks",
+    "href": "4-databricks-github.html#in-databricks",
+    "title": "GitHub in Databricks",
+    "section": "In Databricks",
+    "text": "In Databricks\nWithin Databricks (once you’ve logged into UDAL and authenticated yourself as many times as it has deemed necessary today):\n\nConnecting with your token\n\nClick on your profile in the top right and then Settings.\n\n\n\nThen click Linked Accounts.\n\n\n\nPopulate the form with GitHub as the Git Provider and your own user name. This is where you can paste your Personal Access Token.\n\n\n\n\n\n\n\n\nTip\n\n\n\nRemember: you can’t copy and paste from outside UDAL…",
+    "crumbs": [
+      "GitHub Guides",
+      "GitHub in Databricks"
+    ]
+  },
+  {
+    "objectID": "4-databricks-github.html#working-with-repos",
+    "href": "4-databricks-github.html#working-with-repos",
+    "title": "GitHub in Databricks",
+    "section": "Working with repos",
+    "text": "Working with repos\n\nCreating a repo reminder\n\nIf you do not already have a repo you want to clone, you can create one on GitHub. Feel free to use the SE github template which will initialise a repo with a gitignore, SOP folder and template, and README template with some key reporting info for you to easily edit.\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to create your repo in the nhsengland area, not your personal GitHub, otherwise when you transfer it you will lose your admin privileges! You should also add the South East D&A Team and the everyone team to the permissions.\n\n\n\nNow that you have a repo to clone…\n\n\nCloning a repo\n\nIn your Home (personal) area of Databricks, click Create and then Git Folder.\n\n\nor go via the big New button in the top left.\n\n\nCopy the repo URL into this box and give your folder a name.\n\n\nYou can get the repo URL from GitHub. Navigate to the repo and click the big &lt;&gt;Code button.\n\nWhen you’ve done, it should look something like this:\n\nYou are now ✨Connected✨",
+    "crumbs": [
+      "GitHub Guides",
+      "GitHub in Databricks"
+    ]
+  },
+  {
+    "objectID": "4-databricks-github.html#maintaining-your-repo",
+    "href": "4-databricks-github.html#maintaining-your-repo",
+    "title": "GitHub in Databricks",
+    "section": "Maintaining your repo",
+    "text": "Maintaining your repo\n\nThe Git Window\nClick on the branch name to open the Git window.\n\nFrom here you can manage branches, commits, and everything else that you might want to do. You can also open the repo in GitHub from this pane.\n\n\n\nPull changes to the repository\nMake sure you get the latest version of the repo before you begin using it. Within the Git window, click Pull in the top right corner. Confirm that you’re happy to pull changes.\n\n\n\n\nCreate a branch\nCreating a branch is as simple as selecting Create Branch in the Git window and giving it a name. You can now work from this new branch.\n\nYou can see which branch you are working from in the repository.\n\n\n\n\n\n\n\nTip\n\n\n\nRemember to only make changes outside of the main branch. Only fully complete and QA’d code should be on the main branch.\n\n\n\n\nPush changes\nOnce you’ve made any changes, open up the Git window. Any files which have been changed will appear on the left with the changes on the right. Select which changes to commit and add any commit messages before hitting Commit & Push. Notice that the Databricks integration pushes commits automatically.\n\n\n\n\n\n\n\nTip\n\n\n\nRemember that you can roll back commits, so feel free to stage your commits (make multiple smaller commits) to make it easier to roll back only what you need to.\n\n\nPull requests can be handled and old branches deleted in the normal way on GitHub.\n\n\n\n\n\n\nTip\n\n\n\nYou can assign your QA’er to the pull request to perform the QA and make the final merge.\n\n\n\n\nThe gitignore\nAny files that you want to ignore can be added to the gitignore using the relative file path.",
+    "crumbs": [
+      "GitHub Guides",
+      "GitHub in Databricks"
     ]
   }
 ]
