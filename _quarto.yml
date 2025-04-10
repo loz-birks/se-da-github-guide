@@ -18,6 +18,7 @@ website:
           - 3a-r-studio.qmd
           - 3b-vs-code.qmd
           - 4-databricks-github.qmd
+          - 5-fdp.qmd
       - section: "Principles"
         contents:
           - 2-understanding-code.qmd
