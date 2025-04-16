@@ -2,7 +2,7 @@
 title: "An Introduction to GitHub"
 ---
 
-# What is Git? What is GitHub? and are they the same thing...?
+## What is Git? What is GitHub? and are they the same thing...?
 
 -   **Git** is a version control system. It allows you to track different versions of your files and control source code.
 
@@ -10,9 +10,9 @@ title: "An Introduction to GitHub"
 
 -   There are other alternatives to **GitHub**, for example **GitLab** or **DevOps**, which is part of Azure and is integrated in UDAL.
 
-# Key Concepts
+## Key Concepts
 
-## What is a repository?
+### What is a repository?
 
 -   A repository is a place that contains all your code and files associated with a piece of work.
 
@@ -20,33 +20,33 @@ title: "An Introduction to GitHub"
 
 -   See [here](1-first-repo.qmd#sec-createrepo) for a guide on how to create a repository in the SE D&A area.
 
-## Cloning
+### Cloning
 
-### What is cloning?
+#### What is cloning?
 
 -   Cloning a Git repository means creating a local copy of a remote repository on your computer.
 
 -   Once you have cloned a repository, you can start working on the project, making and saving changes, and committing them to your local repository, without changing the remote version.
 
-### Why clone?
+#### Why clone?
 
 -   **Contribute to group projects** - where multiple people work on the same code base, cloning enables individuals to edit and save the code without impacting on other users.
 
 -   **Make use of other open source repositories** - you can use and edit code from other people's code, even if you don't know them.
 
-## Branching
+### Branching
 
-### What is branching and why do we use it?
+#### What is branching and why do we use it?
 
 A branch is a separate version of the main repository. Branching allows you to work on a different part of a project without impacting the main repository. When any development or work is complete, a branch can be merged with the main repository.
 
-![](pics/intro-branching.PNG)
+![](pics/intro-branching.png)
 
 ::: callout-note
 You can read more about the lego analogy here (<https://opensource.com/article/22/4/git-branches/>).
 :::
 
-## Fetching
+### Fetching
 
 ![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWllaG9mcTZ2c3o4Nzlsb3F0eXRsaWx0azk2bTF2YWw0NjlpNzhiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/G6ojXggFcXWCs/giphy.gif){fig-align="center"}
 
@@ -58,9 +58,9 @@ Given that one of the strengths of using Git and GitHub is that we can all work 
 
 -   Fetch is the safer option as it lets us see what any changes are before we adopt them.
 
-![](pics/fetch-graphic.PNG)
+![](pics/fetch-graphic.png)
 
-## Staging, Committing, and Pushing
+### Staging, Committing, and Pushing
 
 Once you have made a change to a script you can *stage* it, the next step is to *commit* it, and finally you can *push* it to the remote repository.
 
@@ -72,13 +72,13 @@ Staging allows you to group any changes to different, but related, files so that
 
 You may choose not to push your committed changes immediately e.g. if you are still in the process of making changes, but it allows you to separate your changes into stages and keep a record of those. Commits are the units of undo i.e. you can roll back the changes by commit, so it's worth thinking about what you include in each commit (and don't make them too large).
 
-## Pull requests
+### Pull requests
 
 A *pull request* is how you make a request to *merge* your branch to another branch e.g. move your changes to the main branch. If there are things that disagree between the branches that you are trying to merge, this is called a *conflict*. You have to resolve these before you can merge. If there are no conflicts, your pull request can be actioned immediately and the branches will be merged.
 
-![](pics/merge-diagram.PNG)
+![](pics/merge-diagram.png)
 
-# The .gitignore
+## The .gitignore
 
 Sometimes our projects contain information or data that is sensitive and we do not want to publish or track this information. A *.gitignore* is a file that contains all of the files and folders from the project that you do **not** want Git to log and track.
 
