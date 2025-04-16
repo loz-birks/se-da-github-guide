@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SE D&amp;A GitHub Guides - Making sense of code</title>
+<title>SE D&amp;A GitHub Guides - Using GitHub Desktop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-understanding-code.html">Principles</a></li><li class="breadcrumb-item"><a href="./2-understanding-code.html">Making sense of code</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./0-intro-to-github.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="./1b-github-desktop.html">Using GitHub Desktop</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1b-github-desktop.html" class="sidebar-item-text sidebar-link">
+  <a href="./1b-github-desktop.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Using GitHub Desktop</span></a>
   </div>
 </li>
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-understanding-code.html" class="sidebar-item-text sidebar-link active">
+  <a href="./2-understanding-code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Making sense of code</span></a>
   </div>
 </li>
@@ -202,19 +202,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#know-your-angle" id="toc-know-your-angle" class="nav-link active" data-scroll-target="#know-your-angle">Know your angle</a></li>
-  <li><a href="#know-what-the-code-does" id="toc-know-what-the-code-does" class="nav-link" data-scroll-target="#know-what-the-code-does">Know what the code does</a></li>
-  <li><a href="#understand-the-geography" id="toc-understand-the-geography" class="nav-link" data-scroll-target="#understand-the-geography">Understand the geography</a></li>
-  <li><a href="#familiarise-yourself-with-the-data" id="toc-familiarise-yourself-with-the-data" class="nav-link" data-scroll-target="#familiarise-yourself-with-the-data">Familiarise yourself with the data</a></li>
-  <li><a href="#pick-apart-small-sections" id="toc-pick-apart-small-sections" class="nav-link" data-scroll-target="#pick-apart-small-sections">Pick apart small sections</a></li>
-  <li><a href="#trust-the-code" id="toc-trust-the-code" class="nav-link" data-scroll-target="#trust-the-code">Trust the code</a></li>
-  <li><a href="#the-internet-is-your-friend" id="toc-the-internet-is-your-friend" class="nav-link" data-scroll-target="#the-internet-is-your-friend">The internet is your friend</a></li>
-  <li><a href="#tips" id="toc-tips" class="nav-link" data-scroll-target="#tips">Tips</a>
+  <li><a href="#using-github-desktop" id="toc-using-github-desktop" class="nav-link active" data-scroll-target="#using-github-desktop">Using GitHub Desktop</a>
   <ul class="collapse">
-  <li><a href="#indentation" id="toc-indentation" class="nav-link" data-scroll-target="#indentation">Indentation:</a></li>
-  <li><a href="#rainbow-parenthesis" id="toc-rainbow-parenthesis" class="nav-link" data-scroll-target="#rainbow-parenthesis">Rainbow parenthesis:</a></li>
-  <li><a href="#searching-functions" id="toc-searching-functions" class="nav-link" data-scroll-target="#searching-functions">Searching functions:</a></li>
-  <li><a href="#sections" id="toc-sections" class="nav-link" data-scroll-target="#sections">Sections:</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#local-repo-management" id="toc-local-repo-management" class="nav-link" data-scroll-target="#local-repo-management">Local repo management</a>
+  <ul class="collapse">
+  <li><a href="#create-a-repo" id="toc-create-a-repo" class="nav-link" data-scroll-target="#create-a-repo">Create a repo</a></li>
+  <li><a href="#gitignore" id="toc-gitignore" class="nav-link" data-scroll-target="#gitignore">.gitignore</a></li>
+  <li><a href="#local-changes" id="toc-local-changes" class="nav-link" data-scroll-target="#local-changes">Local changes</a></li>
+  <li><a href="#history" id="toc-history" class="nav-link" data-scroll-target="#history">History</a></li>
+  </ul></li>
+  <li><a href="#push-to-github" id="toc-push-to-github" class="nav-link" data-scroll-target="#push-to-github">Push to GitHub</a></li>
+  <li><a href="#open-a-github-repo" id="toc-open-a-github-repo" class="nav-link" data-scroll-target="#open-a-github-repo">Open a GitHub repo</a>
+  <ul class="collapse">
+  <li><a href="#from-the-browser" id="toc-from-the-browser" class="nav-link" data-scroll-target="#from-the-browser">From the Browser</a></li>
+  <li><a href="#from-github-desktop" id="toc-from-github-desktop" class="nav-link" data-scroll-target="#from-github-desktop">From GitHub Desktop</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -222,9 +225,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-understanding-code.html">Principles</a></li><li class="breadcrumb-item"><a href="./2-understanding-code.html">Making sense of code</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./0-intro-to-github.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="./1b-github-desktop.html">Using GitHub Desktop</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Making sense of code</h1>
+<h1 class="title">Using GitHub Desktop</h1>
 </div>
 
 
@@ -241,67 +244,117 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="know-your-angle" class="level2">
-<h2 class="anchored" data-anchor-id="know-your-angle">Know your angle</h2>
-<p>Knowing why you have the code in front of you will help you to define the detail in which you need to understand it. Here are some possible options.</p>
-<ol type="1">
-<li><p>You’ve been asked to QA it- you will probably need to understand the nuts and bolts of functionality, at least enough to <del>try and break it</del> test its robustness.</p></li>
-<li><p>You need to run it in totality- in this case, you probably just need a high level view of what the code does and the key steps. You need to understand enough to debug errors and understand outputs but the nitty gritty is less important.</p></li>
-<li><p>You want to use elements for yourself- you can focus just on the functionality you want, no need to understand everything, just how to find the key bits and why they do what they do.</p></li>
-<li><p>You will need to maintain and adapt the code yourself- in this case, you will probably need an in-depth understanding of the code and its processes.</p></li>
-</ol>
+<section id="using-github-desktop" class="level1">
+<h1>Using GitHub Desktop</h1>
+<p>For those that want do more version control and collaboration, GitHub desktop is a good place to start.</p>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<p>First step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for <strong>GitHub</strong>. You want to download the app with the purple cat.</p>
+<p><img src="pics/company-portal.PNG" class="img-fluid"></p>
+<p>You will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can’t remember).</p>
+<p>If you ever need to change your associated github account, you can navigate File &gt; Options, and switch account in there.</p>
+<p><img src="pics/change-account.PNG" class="img-fluid"></p>
 </section>
-<section id="know-what-the-code-does" class="level2">
-<h2 class="anchored" data-anchor-id="know-what-the-code-does">Know what the code does</h2>
-<p>Get an idea of what the piece of code / project was designed to do. Maybe it’s well-documented or its author has already told you what the purpose is, or maybe it’s a complete mystery. Either way, pick a simple example to work through or just run it all and see what it does.</p>
+<section id="local-repo-management" class="level2">
+<h2 class="anchored" data-anchor-id="local-repo-management">Local repo management</h2>
+<section id="create-a-repo" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-repo">Create a repo</h3>
+<p>Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see <a href="./1-first-repo.html#sec-createrepo">here</a> for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.</p>
+<p><img src="pics/desktop-new-repo.PNG" class="img-fluid"></p>
 </section>
-<section id="understand-the-geography" class="level2">
-<h2 class="anchored" data-anchor-id="understand-the-geography">Understand the geography</h2>
-<p>Most code will be split into sections, e.g.&nbsp;libraries, functions, data import, wrangling / manipulation, visualisation, output. Just knowing how the script is organised can help hugely with unpicking sections. Try and figure out broadly what each part of the code is doing and how the pieces fit together. Maybe it’s helpful to sketch out the different sections and what they do?</p>
+<section id="gitignore" class="level3">
+<h3 class="anchored" data-anchor-id="gitignore">.gitignore</h3>
+<section id="what-is-it-for" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-it-for">What is it for?</h4>
+<p>Setting up a gitignore file is a bit more important when working from GitHub desktop than when simply uploading files to the browser version. By default, all the files in the repo folder will be included in the repo. However, there are likely to be some files or information that you don’t want to share. For example, this could be data or sensitive connection strings. The gitignore file tells the repo which files not to look at.</p>
 </section>
-<section id="familiarise-yourself-with-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="familiarise-yourself-with-the-data">Familiarise yourself with the data</h2>
-<p>Have a look at the data that the script uses. Familiarise yourself with the format, column headers, metric values. This will help you to understand what specific bits of code and focusing on and, if you want to reuse any code, this can also help you to understand what format you need your data to be in.</p>
+<section id="how-do-we-set-one-up" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-we-set-one-up">How do we set one up?</h4>
+<p>This file can be set up when you create the repo by selecting a specific gitignore template. This will ignore a determined list of filetypes which are commonly associated with the option you select. For example, if you select the <strong>R</strong> gitignore template, the file will include all R History, R Data, R User Data, etc. It can be a good starting point if you don’t know where to start.</p>
 </section>
-<section id="pick-apart-small-sections" class="level2">
-<h2 class="anchored" data-anchor-id="pick-apart-small-sections">Pick apart small sections</h2>
-<p>It’s often difficult to read code from start to finish- partly because the optimal organisation for code is not often the way that code is initially written. Try and focus on trying to understand one bit in detail at a time.</p>
+<section id="how-can-i-add-new-files-to-the-gitignore" class="level4">
+<h4 class="anchored" data-anchor-id="how-can-i-add-new-files-to-the-gitignore">How can I add new files to the gitignore?</h4>
+<p>Files can be added to the gitignore manually by right clicking on a file in the <strong>Changes</strong> section of GitHub desktop, and clicking <strong>Ignore file</strong>. You can choose whether to add the individual file or all files of the same filetype (this might be useful if you want to blanket ignore e.g.&nbsp;.csv files)</p>
+</section>
+<section id="how-can-i-make-manual-changes" class="level4">
+<h4 class="anchored" data-anchor-id="how-can-i-make-manual-changes">How can I make manual changes?</h4>
+<p>You can change your gitignore file as you go along by opening it as a text file, making your changes, and saving them. You can then commit changes to your gitignore file in the same way as you commit changes to any other file in the repo so that they are tracked.</p>
+<p>Alternatively, you can update the gitignore by navigating to Repository &gt; Repository settings &gt; Ignored files and make changes there.</p>
+</section>
+<section id="what-can-go-in-the-gitignore" class="level4">
+<h4 class="anchored" data-anchor-id="what-can-go-in-the-gitignore">What can go in the gitignore?</h4>
 <ul>
-<li><p>Think of something that you know that the code does and find that bit.</p></li>
-<li><p>Make notes- maybe run the code line by line and make a comment detailing what that bit did.</p></li>
-<li><p>Don’t get sidetracked- try and focus on one bit at a time.</p></li>
-<li><p>Start from the beginning of a process, or the middle, or the end! Sometimes it’s easiest to start from the beginning and understand each step in-turn, other times the steps taken can feel illogical without knowing the end point. In these cases, you might want to start from the output and understand the previous steps. Other times you might do a bit of both and meet in the middle- do whatever helps you!</p></li>
+<li><em>Individual files</em>: you can ignore individual files by typing the filename</li>
+<li><em>Whole filetypes</em>: if you want to ignore all of a particular filetype just prefix the filetype with an asterisk e.g.&nbsp;*.xlsx</li>
+<li><em>Folders and subfolders</em>: if you don’t want a whole folder included, you can just name the folder path e.g.&nbsp;/data</li>
 </ul>
 </section>
-<section id="trust-the-code" class="level2">
-<h2 class="anchored" data-anchor-id="trust-the-code">Trust the code</h2>
-<p>If there’s a section of the code that you don’t understand but it isn’t part of the process that you need to understand at the moment, it’s ok to treat it as a magical black box. You can always come back to it later but, for now, it’s just a part of the code that serves a purpose. Examples of chunky bits you might be able to ignore are anything that ‘makes things pretty’. Unless you’re specifically interested in the nuts and bolts of e.g.&nbsp;visualisations, that’s often quite a bit of scary looking that you can happily ignore without compromising your understanding of code processes.</p>
 </section>
-<section id="the-internet-is-your-friend" class="level2">
-<h2 class="anchored" data-anchor-id="the-internet-is-your-friend">The internet is your friend</h2>
-<p>Error messages are not always the most helpful. Fortunately, you won’t be the first person to have encountered an error. Copy the error message, minus any bits that are specific to your instance e.g.&nbsp;local paths, file names, etc., and ask the internet for help. If you encounter multiple error messages, start with the first (earliest) one- often it’s a single problem causing the subsequent errors.</p>
+<section id="local-changes" class="level3">
+<h3 class="anchored" data-anchor-id="local-changes">Local changes</h3>
+<p>Until you click <strong>Publish repository</strong>, everything you create will live locally. This means that you can make changes to your files and code and play about endlessly until you’re happy to share more widely. It’s still a good idea to manage and commit changes.</p>
+<p>You should now be able to create your projects and files within the repo folder (which lives wherever you decided when you set up the repo). You are then free to code / change files as you would normally within whichever programmes you use. All your saved changes will be tracked.</p>
+<p>Any changes you save in any files in this folder (that aren’t ignored) will appear in the GitHub desktop <strong>changes</strong> section. You can see which file has changed, what has been removed (red), and what has been added (green). If you like the changes, ensure that the tick box is checked on the left of the file name, name your commit and add a description (optional), and click <strong>Commit to main</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.</p>
+</div>
+</div>
+<p><img src="pics/changes-example.PNG" class="img-fluid"></p>
+<p>You can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately</p>
 </section>
-<section id="tips" class="level2">
-<h2 class="anchored" data-anchor-id="tips">Tips</h2>
-<p>Note: these are R specific tips to help with organising your own, and others’, code.</p>
-<section id="indentation" class="level3">
-<h3 class="anchored" data-anchor-id="indentation">Indentation:</h3>
-<p>Highlighting code and hitting ctrl + i will indent all code. This makes it easier to read and spot the starts and ends of complex functions and loops.</p>
+<section id="history" class="level3">
+<h3 class="anchored" data-anchor-id="history">History</h3>
+<p>If you need to review or revisit any prior commits, you can see these in the <strong>History</strong> tab.</p>
+<p><img src="pics/history.PNG" class="img-fluid"></p>
 </section>
-<section id="rainbow-parenthesis" class="level3">
-<h3 class="anchored" data-anchor-id="rainbow-parenthesis">Rainbow parenthesis:</h3>
-<p>This is a really handy way to patch opening to closing parenthesis. You can spend more time understanding what things are doing rather than counting and matching opening and closing brackets.<br>
-Tools &gt; Global Options &gt; Code &gt; Display &gt; Rainbow parenthesis</p>
 </section>
-<section id="searching-functions" class="level3">
-<h3 class="anchored" data-anchor-id="searching-functions">Searching functions:</h3>
-<p>If you don’t know what a function does or what its inputs / outputs are, you can search in the console e.g.&nbsp;don’t know what mutate does, type ?mutate and hit enter and you will see a short description of what mutate does and an explanation of the variables it takes as inputs.</p>
+<section id="push-to-github" class="level2">
+<h2 class="anchored" data-anchor-id="push-to-github">Push to GitHub</h2>
+<p>All that’s left to do is share your repo to github. This is as easy as clicking the <strong>Publish repository</strong> button.</p>
+<p><img src="pics/publish-repo.PNG" class="img-fluid"></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Remember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won’t be able to make changes or move to the South East area!</p>
+</div>
+</div>
+<p>You can also pull any changes from github down to your local machine by clicking <strong>Pull origin</strong> in the top bar</p>
 </section>
-<section id="sections" class="level3">
-<h3 class="anchored" data-anchor-id="sections">Sections:</h3>
-<p>Create a section by ctrl + shift + r and giving it a name. Sections created like this can be collapsed and navigated to using the menu between the script and the console. This can help you navigate your code and focus only on the section you need.</p>
+<section id="open-a-github-repo" class="level2">
+<h2 class="anchored" data-anchor-id="open-a-github-repo">Open a GitHub repo</h2>
+<p>As well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:</p>
+<ul>
+<li>From the browser</li>
+<li>From the desktop app</li>
+</ul>
+<section id="from-the-browser" class="level3">
+<h3 class="anchored" data-anchor-id="from-the-browser">From the Browser</h3>
+<p>This is really easy. Navigate to the repo you want to work on. Click the green <strong>&lt;&gt; Code</strong> button, and then <strong>Open with GitHub Desktop</strong>. Easy.</p>
+<p><img src="pics/open-repo-browser.PNG" class="img-fluid"></p>
+</section>
+<section id="from-github-desktop" class="level3">
+<h3 class="anchored" data-anchor-id="from-github-desktop">From GitHub Desktop</h3>
+<p>This is almost as easy. Within GitHub desktop, navigate to File &gt; Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.</p>
+<p><img src="pics/clone-repo-desktop.PNG" class="img-fluid"></p>
 
 
+</section>
 </section>
 </section>
 

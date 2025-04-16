@@ -105,6 +105,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0-intro-to-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">An Introduction to GitHub</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
@@ -118,6 +124,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./1-first-repo.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Publishing Your First Repo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1b-github-desktop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using GitHub Desktop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -202,23 +214,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#move-the-repo-to-the-team-area" id="toc-move-the-repo-to-the-team-area" class="nav-link" data-scroll-target="#move-the-repo-to-the-team-area">Move the repo to the team area</a></li>
   <li><a href="#add-files-to-the-repo" id="toc-add-files-to-the-repo" class="nav-link" data-scroll-target="#add-files-to-the-repo">Add files to the repo</a></li>
   </ul></li>
-  <li><a href="#using-github-desktop" id="toc-using-github-desktop" class="nav-link" data-scroll-target="#using-github-desktop">Using GitHub Desktop</a>
-  <ul class="collapse">
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
-  <li><a href="#local-repo-management" id="toc-local-repo-management" class="nav-link" data-scroll-target="#local-repo-management">Local repo management</a>
-  <ul class="collapse">
-  <li><a href="#create-a-repo" id="toc-create-a-repo" class="nav-link" data-scroll-target="#create-a-repo">Create a repo</a></li>
-  <li><a href="#gitignore" id="toc-gitignore" class="nav-link" data-scroll-target="#gitignore">.gitignore</a></li>
-  <li><a href="#local-changes" id="toc-local-changes" class="nav-link" data-scroll-target="#local-changes">Local changes</a></li>
-  <li><a href="#history" id="toc-history" class="nav-link" data-scroll-target="#history">History</a></li>
-  </ul></li>
-  <li><a href="#push-to-github" id="toc-push-to-github" class="nav-link" data-scroll-target="#push-to-github">Push to GitHub</a></li>
-  <li><a href="#open-a-github-repo" id="toc-open-a-github-repo" class="nav-link" data-scroll-target="#open-a-github-repo">Open a GitHub repo</a>
-  <ul class="collapse">
-  <li><a href="#from-the-browser" id="toc-from-the-browser" class="nav-link" data-scroll-target="#from-the-browser">From the Browser</a></li>
-  <li><a href="#from-github-desktop" id="toc-from-github-desktop" class="nav-link" data-scroll-target="#from-github-desktop">From GitHub Desktop</a></li>
-  </ul></li>
-  </ul></li>
   <li><a href="#hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular" id="toc-hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular" class="nav-link" data-scroll-target="#hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular">Hints / tips / notes / things that don’t particularly belong anywhere in particular</a></li>
   </ul>
 </nav>
@@ -272,13 +267,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="get-added-to-the-nhs-england-organisation-and-se-da-area" class="level2">
 <h2 class="anchored" data-anchor-id="get-added-to-the-nhs-england-organisation-and-se-da-area">Get added to the NHS England Organisation and SE D&amp;A area</h2>
 <p>Once you have a GitHub account and are set up with 2FA, you can email the organisational GitHub Management inbox at github@england.nhs.uk, requesting to be added to the NHS England Organisation and then one of our local admins can add you to the South East D&amp;A area.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -360,117 +355,6 @@ Tip
 <p><img src="https://media.giphy.com/media/G96zgIcQn1L2xpmdxi/giphy.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-</section>
-</section>
-<section id="using-github-desktop" class="level1">
-<h1>Using GitHub Desktop</h1>
-<p>For those that want do more version control and collaboration, GitHub desktop is a good place to start.</p>
-<section id="setup" class="level2">
-<h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<p>First step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for <strong>GitHub</strong>. You want to download the app with the purple cat.</p>
-<p><img src="pics/company-portal.PNG" class="img-fluid"></p>
-<p>You will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can’t remember).</p>
-<p>If you ever need to change your associated github account, you can navigate File &gt; Options, and switch account in there.</p>
-<p><img src="pics/change-account.PNG" class="img-fluid"></p>
-</section>
-<section id="local-repo-management" class="level2">
-<h2 class="anchored" data-anchor-id="local-repo-management">Local repo management</h2>
-<section id="create-a-repo" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-repo">Create a repo</h3>
-<p>Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see <a href="#sec-createrepo" class="quarto-xref">Section&nbsp;3.1</a> for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.</p>
-<p><img src="pics/desktop-new-repo.PNG" class="img-fluid"></p>
-</section>
-<section id="gitignore" class="level3">
-<h3 class="anchored" data-anchor-id="gitignore">.gitignore</h3>
-<section id="what-is-it-for" class="level4">
-<h4 class="anchored" data-anchor-id="what-is-it-for">What is it for?</h4>
-<p>Setting up a gitignore file is a bit more important when working from GitHub desktop than when simply uploading files to the browser version. By default, all the files in the repo folder will be included in the repo. However, there are likely to be some files or information that you don’t want to share. For example, this could be data or sensitive connection strings. The gitignore file tells the repo which files not to look at.</p>
-</section>
-<section id="how-do-we-set-one-up" class="level4">
-<h4 class="anchored" data-anchor-id="how-do-we-set-one-up">How do we set one up?</h4>
-<p>This file can be set up when you create the repo by selecting a specific gitignore template. This will ignore a determined list of filetypes which are commonly associated with the option you select. For example, if you select the <strong>R</strong> gitignore template, the file will include all R History, R Data, R User Data, etc. It can be a good starting point if you don’t know where to start.</p>
-</section>
-<section id="how-can-i-add-new-files-to-the-gitignore" class="level4">
-<h4 class="anchored" data-anchor-id="how-can-i-add-new-files-to-the-gitignore">How can I add new files to the gitignore?</h4>
-<p>Files can be added to the gitignore manually by right clicking on a file in the <strong>Changes</strong> section of GitHub desktop, and clicking <strong>Ignore file</strong>. You can choose whether to add the individual file or all files of the same filetype (this might be useful if you want to blanket ignore e.g.&nbsp;.csv files)</p>
-</section>
-<section id="how-can-i-make-manual-changes" class="level4">
-<h4 class="anchored" data-anchor-id="how-can-i-make-manual-changes">How can I make manual changes?</h4>
-<p>You can change your gitignore file as you go along by opening it as a text file, making your changes, and saving them. You can then commit changes to your gitignore file in the same way as you commit changes to any other file in the repo so that they are tracked.</p>
-<p>Alternatively, you can update the gitignore by navigating to Repository &gt; Repository settings &gt; Ignored files and make changes there.</p>
-</section>
-<section id="what-can-go-in-the-gitignore" class="level4">
-<h4 class="anchored" data-anchor-id="what-can-go-in-the-gitignore">What can go in the gitignore?</h4>
-<ul>
-<li><em>Individual files</em>: you can ignore individual files by typing the filename</li>
-<li><em>Whole filetypes</em>: if you want to ignore all of a particular filetype just prefix the filetype with an asterisk e.g.&nbsp;*.xlsx</li>
-<li><em>Folders and subfolders</em>: if you don’t want a whole folder included, you can just name the folder path e.g.&nbsp;/data</li>
-</ul>
-</section>
-</section>
-<section id="local-changes" class="level3">
-<h3 class="anchored" data-anchor-id="local-changes">Local changes</h3>
-<p>Until you click <strong>Publish repository</strong>, everything you create will live locally. This means that you can make changes to your files and code and play about endlessly until you’re happy to share more widely. It’s still a good idea to manage and commit changes.</p>
-<p>You should now be able to create your projects and files within the repo folder (which lives wherever you decided when you set up the repo). You are then free to code / change files as you would normally within whichever programmes you use. All your saved changes will be tracked.</p>
-<p>Any changes you save in any files in this folder (that aren’t ignored) will appear in the GitHub desktop <strong>changes</strong> section. You can see which file has changed, what has been removed (red), and what has been added (green). If you like the changes, ensure that the tick box is checked on the left of the file name, name your commit and add a description (optional), and click <strong>Commit to main</strong>.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.</p>
-</div>
-</div>
-<p><img src="pics/changes-example.PNG" class="img-fluid"></p>
-<p>You can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately</p>
-</section>
-<section id="history" class="level3">
-<h3 class="anchored" data-anchor-id="history">History</h3>
-<p>If you need to review or revisit any prior commits, you can see these in the <strong>History</strong> tab.</p>
-<p><img src="pics/history.PNG" class="img-fluid"></p>
-</section>
-</section>
-<section id="push-to-github" class="level2">
-<h2 class="anchored" data-anchor-id="push-to-github">Push to GitHub</h2>
-<p>All that’s left to do is share your repo to github. This is as easy as clicking the <strong>Publish repository</strong> button.</p>
-<p><img src="pics/publish-repo.PNG" class="img-fluid"></p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Remember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won’t be able to make changes or move to the South East area!</p>
-</div>
-</div>
-<p>You can also pull any changes from github down to your local machine by clicking <strong>Pull origin</strong> in the top bar</p>
-</section>
-<section id="open-a-github-repo" class="level2">
-<h2 class="anchored" data-anchor-id="open-a-github-repo">Open a GitHub repo</h2>
-<p>As well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:</p>
-<ul>
-<li>From the browser</li>
-<li>From the desktop app</li>
-</ul>
-<section id="from-the-browser" class="level3">
-<h3 class="anchored" data-anchor-id="from-the-browser">From the Browser</h3>
-<p>This is really easy. Navigate to the repo you want to work on. Click the green <strong>&lt;&gt; Code</strong> button, and then <strong>Open with GitHub Desktop</strong>. Easy.</p>
-<p><img src="pics/open-repo-browser.PNG" class="img-fluid"></p>
-</section>
-<section id="from-github-desktop" class="level3">
-<h3 class="anchored" data-anchor-id="from-github-desktop">From GitHub Desktop</h3>
-<p>This is almost as easy. Within GitHub desktop, navigate to File &gt; Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.</p>
-<p><img src="pics/clone-repo-desktop.PNG" class="img-fluid"></p>
-</section>
 </section>
 </section>
 <section id="hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular" class="level1">
