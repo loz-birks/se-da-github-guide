@@ -1,5 +1,7 @@
 # South East D&A GitHub resources
 
+https://loz-birks.github.io/se-da-github-guide/0-intro-to-github.html
+
 With thanks to contributions from analysts throughout NHS England and the wider health system for resources that I have, no doubt, plagiarised with varying degrees of awareness!
 
 **Status:** Active 
