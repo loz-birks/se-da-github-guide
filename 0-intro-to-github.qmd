@@ -34,7 +34,7 @@ title: "An Introduction to GitHub"
 
 -   **Make use of other open source repositories** - you can use and edit code from other people's code, even if you don't know them.
 
-### Branching
+### Branching {#sec-branching}
 
 #### What is branching and why do we use it?
 
