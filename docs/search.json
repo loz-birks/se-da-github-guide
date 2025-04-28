@@ -782,5 +782,67 @@
     "crumbs": [
       "An Introduction to GitHub"
     ]
+  },
+  {
+    "objectID": "6-qasar.html",
+    "href": "6-qasar.html",
+    "title": "Branches and Issues for QA",
+    "section": "",
+    "text": "Note\n\n\n\nThis process can be managed in GitHub desktop, VS Code, or wherever you are most comfortable.",
+    "crumbs": [
+      "Principles",
+      "Branches and Issues for QA"
+    ]
+  },
+  {
+    "objectID": "6-qasar.html#remember-the-principles-of-branching",
+    "href": "6-qasar.html#remember-the-principles-of-branching",
+    "title": "Branches and Issues for QA",
+    "section": "Remember the principles of branching",
+    "text": "Remember the principles of branching\nFirst let’s remind ourselves of the principles of branching (see here for an intro to branching):\n\nAll code in the main branch should be fully QA’d and functional - even if this means that the repo is almost empty initially.\nNew developments and changes should be coded in their own branch: one branch per ‘feature’. Give the branch a name that helps you identify what a change relates to.\nIf working on larger changes, it may be best to break it down into smaller steps and develop and QA iteratively - you can branch off your branch to help with this.\nGitHub will provide an audit trail of changes made, when they were made, and who made them. This aligns nicely with the team’s QASAR process. It is also easy to roll back to an earlier version if needed.\n\n\n\n\n\n\n\nNote\n\n\n\nRemember that we don’t have enterprise licences so we can’t protect our main branches. Changes can be merged without review so be careful.",
+    "crumbs": [
+      "Principles",
+      "Branches and Issues for QA"
+    ]
+  },
+  {
+    "objectID": "6-qasar.html#within-the-regular-qa-process",
+    "href": "6-qasar.html#within-the-regular-qa-process",
+    "title": "Branches and Issues for QA",
+    "section": "within the regular QA process",
+    "text": "within the regular QA process\n\nCheck\nThere are a couple of checks to do before QA kicks off properly.\nThe author:\n\nCheck that your code is intentionally commented.\nThe changes you have made are complete, self-reviewed, and saved.\nYou may want to include the author and latest modification date at the top (although GitHub will help manage this for you).\nEnsure that your repo is up to date on GitHub so that the person QA-ing has the most recent version.\nMake sure that the reviewer is a collaborator in the repo settings.\n\nThe QA’er:\n\nMake sure that you have the time and knowledge to do the review.\n\n\n\nRequest QA - the author\nGiven that all your changes are in a new feature branch, the QA process boils down to pull requests.\n\nCreate a pull request with your changes\nAdd a description of what needs to be QA’d, why changes have been made, and any specific QA requests\nAssign a reviewer and click create pull request\n\n\n\nComplete QA - the reviewer\nOnce you’ve been added as a reviewer, you will receive an email with a link, and a GitHub notification where you can view changes.\n\nAdditions will be in green and removals in red. Review all changes and files, adding comments and requesting changes where necessary.\n\nComments can be added in-line with code\n\nOnce you are happy with the changes and all issues are resolved, you can approve the pull request.\n\n\n\nMerge and tidy - the author\nAt this stage, the author can merge the branch. You might want to include in the description (and hence the commit history), the QASAR level requested.\n\n\n\n\n\n\nNote\n\n\n\nAll other information about who QA’d and when will be logged automatically in the pull request.\n\n\nOnce the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!"
+  },
+  {
+    "objectID": "6-qasar.html#what-to-do-if-you-spot-an-issue-or-have-an-idea",
+    "href": "6-qasar.html#what-to-do-if-you-spot-an-issue-or-have-an-idea",
+    "title": "Branches and Issues for QA",
+    "section": "2. What to do if you spot an issue or have an idea",
+    "text": "2. What to do if you spot an issue or have an idea\nIf you are not within the designated QA process, it is still possible that, in using the code, you see a bug or you have a suggestion for a development. You can do that by creating issues. Any user with read access to a repo can create an issue (assuming that issues are enabled for the repo).\n\n\nThe process\n\n[You, the idea-haver or bug-spotter] Create an issue detailing the problem or idea (help here: https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue).\n[You] If the error or bug is solvable and you feel inclined, you have the option to create a branch that addresses the issue. You can link the pull request with the issue (https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).\n[The author] The person managing the code can add the issue number to any relevant ticket on the task board.\n[The author] The error, bug, or development can be prioritised and actions. Their pull request can also be linked with the issue (https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).\nIssues linked with a pull request will close automatically when they are merged. If not, they can be closed by users with triage permission or greater (https://docs.github.com/en/issues/tracking-your-work-with-issues/administering-issues/closing-an-issue).",
+    "crumbs": [
+      "Principles",
+      "Branches and Issues for QA"
+    ]
+  },
+  {
+    "objectID": "6-qasar.html#summary-of-the-process",
+    "href": "6-qasar.html#summary-of-the-process",
+    "title": "Branches and Issues for QA",
+    "section": "Summary of the process",
+    "text": "Summary of the process",
+    "crumbs": [
+      "Principles",
+      "Branches and Issues for QA"
+    ]
+  },
+  {
+    "objectID": "6-qasar.html#planned-qa-process",
+    "href": "6-qasar.html#planned-qa-process",
+    "title": "Branches and Issues for QA",
+    "section": "1. Planned QA Process",
+    "text": "1. Planned QA Process\n\nCheck\nThere are a couple of checks to do before QA kicks off properly.\nIf you are the author:\n\nCheck that your code is intentionally commented.\nThe changes you have made are complete, self-reviewed, and saved.\nYou may want to include the author and latest modification date at the top (although GitHub will help manage this for you).\nEnsure that your repo is up to date on GitHub so that the person QA-ing has the most recent version.\nMake sure that the reviewer is a collaborator in the repo settings.\n\nIf you are the QA’er:\n\nMake sure that you have the time and knowledge to do the review.\n\n\n\nRequest QA - the author\nGiven that all your changes are in a new feature branch, the QA process boils down to pull requests.\n\nCreate a pull request with your changes\nAdd a description of what needs to be QA’d, why changes have been made, and any specific QA requests\nAssign a reviewer and click create pull request\n\n\n\nComplete QA - the reviewer\nOnce you’ve been added as a reviewer, you will receive an email with a link, and a GitHub notification where you can view changes.\n\nAdditions will be in green and removals in red. Review all changes and files, adding comments and requesting changes where necessary.\n\nComments can be added in-line with code\n\nOnce you are happy with the changes and all issues are resolved, you can approve the pull request.\n\n\n\nMerge and tidy - the author\nAt this stage, the author can merge the branch. You might want to include in the description (and hence the commit history), the QASAR level requested.\n\n\n\n\n\n\nNote\n\n\n\nAll other information about who QA’d and when will be logged automatically in the pull request.\n\n\nOnce the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!",
+    "crumbs": [
+      "Principles",
+      "Branches and Issues for QA"
+    ]
   }
 ]

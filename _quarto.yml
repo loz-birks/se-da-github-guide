@@ -24,6 +24,7 @@ website:
       - section: "Principles"
         contents:
           - 2-understanding-code.qmd
+          - 6-qasar.qmd
       - section: "Placeholder"
         contents:
           - N-another-page.qmd
