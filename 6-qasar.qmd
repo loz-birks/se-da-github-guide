@@ -2,6 +2,10 @@
 title: "Branches and Issues for QA"
 ---
 
+::: callout-note
+This process can be managed in GitHub desktop, VS Code, or wherever you are most comfortable.
+:::
+
 ## Remember the principles of branching
 
 First let's remind ourselves of the principles of branching (see [here](0-intro-to-github.qmd#sec-branching) for an intro to branching): 
@@ -18,17 +22,13 @@ First let's remind ourselves of the principles of branching (see [here](0-intro-
 Remember that we don't have enterprise licences so we can't protect our main branches. Changes can be merged without review so be careful. 
 :::
 
-::: callout-note
-You can manage this process in GitHub desktop, VS Code, or wherever you are most comfortable.
-:::
-
-## within the regular QA process
+## 1. Planned QA Process
 
 ### Check
 
 There are a couple of checks to do before QA kicks off properly. 
 
-The author: 
+If you are the **author**: 
 
 -   Check that your code is intentionally commented.
 
@@ -40,7 +40,7 @@ The author:
 
 -   Make sure that the reviewer is a collaborator in the repo settings.
 
-The QA'er: 
+If you are the **QA'er**: 
 
 -   Make sure that you have the time and knowledge to do the review.
 
@@ -56,16 +56,35 @@ Given that all your changes are in a new feature branch, the QA process boils do
 
 ### Complete QA - the reviewer
 
-Once you've been added as a reviewer, you will receive an email with a link, and a GitHub notification where you can view changes. Additions will be in green and removals in red. Review all changes and files, adding comments and requestion changes where necessary. Once you are happy with the changes and all issues are resolved, you can approve the pull request. 
+Once you've been added as a reviewer, you will receive an email with a link, and a GitHub notification where you can view changes. 
+
+![](pics/qasar-pr-notification.png)
+
+Additions will be in green and removals in red. Review all changes and files, adding comments and requesting changes where necessary. 
+
+![](pics/qasar-pr-request.png)
+
+Comments can be added in-line with code
+
+![](pics/qasar-pr-comment.png)
+
+Once you are happy with the changes and all issues are resolved, you can approve the pull request. 
+
+![](pics/qasar-pr-approved.png)
 
 ### Merge and tidy - the author
 
+At this stage, the author can merge the branch. You might want to include in the description (and hence the commit history), the QASAR level requested. 
 
+::: callout-note
+All other information about who QA'd and when will be logged automatically in the pull request.
+:::
 
+Once the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!
 
+![](pics/qasar-pr-merged.png)
 
-
-## What to do if you spot an issue or have an idea
+## 2. What to do if you spot an issue or have an idea
 
 If you are not within the designated QA process, it is still possible that, in using the code, you see a bug or you have a suggestion for a development. You can do that by creating *issues*. Any user with read access to a repo can create an issue (assuming that issues are enabled for the repo). 
 
@@ -73,13 +92,13 @@ If you are not within the designated QA process, it is still possible that, in u
 
 ### The process
 
-1.    [You, the idea-haver or bug-spotter] Create an issue detailing the problem or idea (help here: <https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue>).
+1.    **[You, the idea-haver or bug-spotter]** Create an issue detailing the problem or idea (help here: <https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue>).
 
-2.    [You] If the error or bug is solvable and you feel inclined, you have the option to create a branch that addresses the issue. You can link the pull request with the issue (<https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword>).
+2.    **[You]** If the error or bug is solvable and you feel inclined, you have the option to create a branch that addresses the issue. You can link the pull request with the issue (<https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword>).
 
-3.    [The author] The person managing the code can add the issue number to any relevant ticket on the task board. 
+3.    **[The author]** The person managing the code can add the issue number to any relevant ticket on the task board. 
 
-4.    [The author] The error, bug, or development can be prioritised and actions. Their pull request can also be linked with the issue (<https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword>). 
+4.    **[The author]** The error, bug, or development can be prioritised and actions. Their pull request can also be linked with the issue (<https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword>). 
 
 5.    Issues linked with a pull request will close automatically when they are merged. If not, they can be closed by users with triage permission or greater (<https://docs.github.com/en/issues/tracking-your-work-with-issues/administering-issues/closing-an-issue>). 
 
