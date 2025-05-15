@@ -98,7 +98,11 @@ If you have created your repo in the organisational area, you might want to move
 
 ![](pics/role-select.PNG)
 
-Your repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you've allowed them to! ::: callout-tip Please also add the nhsengland **everyone** team to the repo so that everyone in the organisation can see your code. :::
+Your repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you've allowed them to! 
+
+::: callout-tip 
+Please also add the nhsengland **everyone** team to the repo and give them read access so that everyone in the organisation can see your code. 
+:::
 
 ## Add files to the repo
 
