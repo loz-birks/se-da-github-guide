@@ -22,7 +22,7 @@ If you ever need to change your associated github account, you can navigate File
 
 ### Create a repo
 
-Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see [here](1-first-repo.qmd#sec-createrepo) for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.
+Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see [here](first-repo.qmd#sec-createrepo) for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.
 
 ![](pics/desktop-new-repo.PNG)
 
