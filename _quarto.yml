@@ -12,22 +12,22 @@ website:
     style: "docked"
     search: true
     contents:
-      - intro-to-github.qmd
+      - pages/intro-to-github.qmd
       - section: "GitHub Guides"
         contents:
-          - first-repo.qmd
-          - github-desktop.qmd
-          - r-studio.qmd
-          - vs-code.qmd
-          - databricks-github.qmd
-          - fdp.qmd
+          - pages/first-repo.qmd
+          - pages/github-desktop.qmd
+          - pages/r-studio.qmd
+          - pages/vs-code.qmd
+          - pages/databricks-github.qmd
+          - pages/fdp.qmd
       - section: "Principles"
         contents:
-          - understanding-code.qmd
-          - qasar.qmd
+          - pages/understanding-code.qmd
+          - pages/qasar.qmd
       - section: "Placeholder"
         contents:
-          - another-page.qmd
+          - pages/another-page.qmd
       
 format:
   html:
