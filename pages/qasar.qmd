@@ -8,7 +8,7 @@ This process can be managed in GitHub desktop, VS Code, or wherever you are most
 
 ## Remember the principles of branching
 
-First let's remind ourselves of the principles of branching (see [here](0-intro-to-github.qmd#sec-branching) for an intro to branching): 
+First let's remind ourselves of the principles of branching (see [here](intro-to-github.qmd#sec-branching) for an intro to branching): 
 
 -   All code in the main branch should be fully QA'd and functional - **even if this means that the repo is almost empty initially**.
 

@@ -18,7 +18,7 @@ title: "An Introduction to GitHub"
 
 -   Generally, you would have a separate repository for each of your projects.
 
--   See [here](1-first-repo.qmd#sec-createrepo) for a guide on how to create a repository in the SE D&A area.
+-   See [here](first-repo.qmd#sec-createrepo) for a guide on how to create a repository in the SE D&A area.
 
 ### Cloning
 

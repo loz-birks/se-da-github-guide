@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SE D&amp;A GitHub Guides - Version Control</title>
+<title>SE D&amp;A GitHub Guides - Branches and Issues for QA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,59 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -102,7 +68,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -114,9 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      SE D&amp;A GitHub Guides
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/understanding-code.html">Principles</a></li><li class="breadcrumb-item"><a href="../pages/qasar.html">Branches and Issues for QA</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -131,7 +95,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">SE D&amp;A GitHub Guides</a> 
+      <a href="../">SE D&amp;A GitHub Guides</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -143,7 +107,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0-intro-to-github.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/intro-to-github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">An Introduction to GitHub</span></a>
   </div>
 </li>
@@ -158,37 +122,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-first-repo.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/first-repo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publishing Your First Repo</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1b-github-desktop.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/github-desktop.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using GitHub Desktop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3a-r-studio.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/r-studio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub in RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3b-vs-code.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/vs-code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub in VS Code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4-databricks-github.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/databricks-github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub in Databricks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./5-fdp.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/fdp.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub in FDP</span></a>
   </div>
 </li>
@@ -205,13 +169,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-understanding-code.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/understanding-code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Making sense of code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./6-qasar.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/qasar.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Branches and Issues for QA</span></a>
   </div>
 </li>
@@ -228,7 +192,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./N-another-page.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/another-page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Another Page</span></a>
   </div>
 </li>
@@ -244,41 +208,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-version-control" id="toc-why-version-control" class="nav-link active" data-scroll-target="#why-version-control">Why version control?</a></li>
-  <li><a href="#options-covered" id="toc-options-covered" class="nav-link" data-scroll-target="#options-covered">Options covered</a></li>
-  <li><a href="#process-map" id="toc-process-map" class="nav-link" data-scroll-target="#process-map">Process map</a></li>
-  <li><a href="#setting-up-git-in-vscode" id="toc-setting-up-git-in-vscode" class="nav-link" data-scroll-target="#setting-up-git-in-vscode">Setting up Git in VSCode</a></li>
-  <li><a href="#initialising-a-repository" id="toc-initialising-a-repository" class="nav-link" data-scroll-target="#initialising-a-repository">Initialising a repository</a></li>
-  <li><a href="#cloning-a-repository" id="toc-cloning-a-repository" class="nav-link" data-scroll-target="#cloning-a-repository">Cloning a repository</a></li>
-  <li><a href="#branching" id="toc-branching" class="nav-link" data-scroll-target="#branching">Branching</a></li>
-  <li><a href="#tracking-and-staging" id="toc-tracking-and-staging" class="nav-link" data-scroll-target="#tracking-and-staging">Tracking and staging</a></li>
-  <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit">Commit</a></li>
-  <li><a href="#git-restore" id="toc-git-restore" class="nav-link" data-scroll-target="#git-restore">Git restore</a></li>
-  <li><a href="#merge" id="toc-merge" class="nav-link" data-scroll-target="#merge">Merge</a></li>
-  <li><a href="#merge-conflicts" id="toc-merge-conflicts" class="nav-link" data-scroll-target="#merge-conflicts">Merge conflicts</a></li>
-  <li><a href="#git-log" id="toc-git-log" class="nav-link" data-scroll-target="#git-log">Git Log</a></li>
-  <li><a href="#diff" id="toc-diff" class="nav-link" data-scroll-target="#diff">diff</a></li>
-  <li><a href="#roll-back" id="toc-roll-back" class="nav-link" data-scroll-target="#roll-back">Roll back</a></li>
-  <li><a href="#git-revert" id="toc-git-revert" class="nav-link" data-scroll-target="#git-revert">Git revert</a></li>
-  <li><a href="#publishing-an-existing-repo" id="toc-publishing-an-existing-repo" class="nav-link" data-scroll-target="#publishing-an-existing-repo">Publishing an existing repo</a></li>
-  <li><a href="#push-and-pull" id="toc-push-and-pull" class="nav-link" data-scroll-target="#push-and-pull">Push and pull</a></li>
-  <li><a href="#forking-and-cloning" id="toc-forking-and-cloning" class="nav-link" data-scroll-target="#forking-and-cloning">Forking and cloning</a></li>
-  <li><a href="#pull-requests" id="toc-pull-requests" class="nav-link" data-scroll-target="#pull-requests">Pull requests</a></li>
-  <li><a href="#issues" id="toc-issues" class="nav-link" data-scroll-target="#issues">Issues</a></li>
-  <li><a href="#using-git-in-rstudio" id="toc-using-git-in-rstudio" class="nav-link" data-scroll-target="#using-git-in-rstudio">Using Git in RStudio</a>
+  <li><a href="#remember-the-principles-of-branching" id="toc-remember-the-principles-of-branching" class="nav-link active" data-scroll-target="#remember-the-principles-of-branching">Remember the principles of branching</a></li>
+  <li><a href="#planned-qa-process" id="toc-planned-qa-process" class="nav-link" data-scroll-target="#planned-qa-process">1. Planned QA Process</a>
   <ul class="collapse">
-  <li><a href="#part-1-create-a-new-rstudio-project-with-git" id="toc-part-1-create-a-new-rstudio-project-with-git" class="nav-link" data-scroll-target="#part-1-create-a-new-rstudio-project-with-git">Part 1: Create a new RStudio project with Git</a></li>
-  <li><a href="#part-2-make-local-changes-commit-and-push-to-github" id="toc-part-2-make-local-changes-commit-and-push-to-github" class="nav-link" data-scroll-target="#part-2-make-local-changes-commit-and-push-to-github">Part 2: Make local changes, commit and push to GitHub</a></li>
+  <li><a href="#check" id="toc-check" class="nav-link" data-scroll-target="#check">Check</a></li>
+  <li><a href="#request-qa---the-author" id="toc-request-qa---the-author" class="nav-link" data-scroll-target="#request-qa---the-author">Request QA - the author</a></li>
+  <li><a href="#complete-qa---the-reviewer" id="toc-complete-qa---the-reviewer" class="nav-link" data-scroll-target="#complete-qa---the-reviewer">Complete QA - the reviewer</a></li>
+  <li><a href="#merge-and-tidy---the-author" id="toc-merge-and-tidy---the-author" class="nav-link" data-scroll-target="#merge-and-tidy---the-author">Merge and tidy - the author</a></li>
   </ul></li>
+  <li><a href="#what-to-do-if-you-spot-an-issue-or-have-an-idea" id="toc-what-to-do-if-you-spot-an-issue-or-have-an-idea" class="nav-link" data-scroll-target="#what-to-do-if-you-spot-an-issue-or-have-an-idea">2. What to do if you spot an issue or have an idea</a>
+  <ul class="collapse">
+  <li><a href="#the-process" id="toc-the-process" class="nav-link" data-scroll-target="#the-process">The process</a></li>
+  </ul></li>
+  <li><a href="#summary-of-the-process" id="toc-summary-of-the-process" class="nav-link" data-scroll-target="#summary-of-the-process">Summary of the process</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/understanding-code.html">Principles</a></li><li class="breadcrumb-item"><a href="../pages/qasar.html">Branches and Issues for QA</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Version Control</h1>
+<h1 class="title">Branches and Issues for QA</h1>
 </div>
 
 
@@ -295,135 +246,120 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="why-version-control" class="level1">
-<h1>Why version control?</h1>
-<p>Blurb about why to use version control.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This process can be managed in GitHub desktop, VS Code, or wherever you are most comfortable.</p>
+</div>
+</div>
+<section id="remember-the-principles-of-branching" class="level2">
+<h2 class="anchored" data-anchor-id="remember-the-principles-of-branching">Remember the principles of branching</h2>
+<p>First let’s remind ourselves of the principles of branching (see <a href="../pages/intro-to-github.html#sec-branching">here</a> for an intro to branching):</p>
+<ul>
+<li><p>All code in the main branch should be fully QA’d and functional - <strong>even if this means that the repo is almost empty initially</strong>.</p></li>
+<li><p>New developments and changes should be coded in their own branch: one branch per ‘feature’. Give the branch a name that helps you identify what a change relates to.</p></li>
+<li><p>If working on larger changes, it may be best to break it down into smaller steps and develop and QA iteratively - you can branch off your branch to help with this.</p></li>
+<li><p>GitHub will provide an audit trail of changes made, when they were made, and who made them. This aligns nicely with the team’s QASAR process. It is also easy to roll back to an earlier version if needed.</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Remember that we don’t have enterprise licences so we can’t protect our main branches. Changes can be merged without review so be careful.</p>
+</div>
+</div>
 </section>
-<section id="options-covered" class="level1">
-<h1>Options covered</h1>
-<p>Multiple ways to manage. Scope of this is VS Code and RStudio. Maybe link to how to download and sign into VS Code or RStudio - out of scope for this.</p>
+<section id="planned-qa-process" class="level2">
+<h2 class="anchored" data-anchor-id="planned-qa-process">1. Planned QA Process</h2>
+<section id="check" class="level3">
+<h3 class="anchored" data-anchor-id="check">Check</h3>
+<p>There are a couple of checks to do before QA kicks off properly.</p>
+<p>If you are the <strong>author</strong>:</p>
+<ul>
+<li><p>Check that your code is intentionally commented.</p></li>
+<li><p>The changes you have made are complete, self-reviewed, and saved.</p></li>
+<li><p>You may want to include the author and latest modification date at the top (although GitHub will help manage this for you).</p></li>
+<li><p>Ensure that your repo is up to date on GitHub so that the person QA-ing has the most recent version.</p></li>
+<li><p>Make sure that the reviewer is a collaborator in the repo settings.</p></li>
+</ul>
+<p>If you are the <strong>QA’er</strong>:</p>
+<ul>
+<li>Make sure that you have the time and knowledge to do the review.</li>
+</ul>
 </section>
-<section id="process-map" class="level1">
-<h1>Process map</h1>
-<p>If possible…</p>
+<section id="request-qa---the-author" class="level3">
+<h3 class="anchored" data-anchor-id="request-qa---the-author">Request QA - the author</h3>
+<p>Given that all your changes are in a new feature branch, the QA process boils down to pull requests.</p>
+<ul>
+<li><p>Create a pull request with your changes</p></li>
+<li><p>Add a description of what needs to be QA’d, why changes have been made, and any specific QA requests</p></li>
+<li><p>Assign a reviewer and click <em>create pull request</em></p></li>
+</ul>
 </section>
-<section id="setting-up-git-in-vscode" class="level1">
-<h1>Setting up Git in VSCode</h1>
-<p>Before we get started using Git in VSCode, for the first time only, it needs to be configured. Yes, it uses the Terminal window, but it’s not scary!</p>
-<p>This can be done either by: - Open ‘Terminal’ from the search on your desktop taskbar - Open ‘Terminal’ in VSCode (‘View’ -&gt; ‘Terminal’)</p>
-<p>In either one, type in the following: git config –global user.name “githubusername” &lt;- Enter your own GitHub username in the quotations, then hit enter git config –global user.email “email@nhs.net” &lt;- Enter your own email address associated with your GitHub account in the quotations, then hit enter</p>
-<p>That’s it :star:</p>
+<section id="complete-qa---the-reviewer" class="level3">
+<h3 class="anchored" data-anchor-id="complete-qa---the-reviewer">Complete QA - the reviewer</h3>
+<p>Once you’ve been added as a reviewer, you will receive an email with a link, and a GitHub notification where you can view changes.</p>
+<p><img src="pics/qasar-pr-notification.png" class="img-fluid"></p>
+<p>Additions will be in green and removals in red. Review all changes and files, adding comments and requesting changes where necessary.</p>
+<p><img src="pics/qasar-pr-request.png" class="img-fluid"></p>
+<p>Comments can be added in-line with code</p>
+<p><img src="pics/qasar-pr-comment.png" class="img-fluid"></p>
+<p>Once you are happy with the changes and all issues are resolved, you can approve the pull request.</p>
+<p><img src="pics/qasar-pr-approved.png" class="img-fluid"></p>
 </section>
-<section id="initialising-a-repository" class="level1">
-<h1>Initialising a repository</h1>
-<p>Create the repo before you start coding Create the repo before you start coding Create the repo before you start coding</p>
-<p>The best thing to do is to create the repo before (or as soon to the beginning as possible) starting writing your actual code. Think of it as this: you wouldn’t work on a big excel file without saving first, in case you lost it. The same applies here.</p>
-<p>The way that Git works, you work on files saved in a local folder, then push to GitHub when you’re done (so you’re never working directly in GitHub). So, to start, you need to create a local blank folder for you to start with (or where you existing folder is). Recommendation is to create a ‘GitHub’ folder in your OneDrive, where the repo folders can sit.</p>
-<p>To intisialise a repo, click the Source Control button on the left panel:</p>
-<p><img src="pics/sourcecontrol.png" class="img-fluid"></p>
-<p>Click ‘Open Folder’ and navigate to the repo folder (in your ‘OneDrive’ folder). Note: you may be asked whether you trust the authors of the files in the folder. Usually this is yes, as it’s from your own OneDrive.</p>
-<p>Now we’ve selected the folder, we can now initialise the repository:</p>
-<p><img src="pics/initrepo.png" class="img-fluid"></p>
-<p>This won’t yet appear on the GitHub web browser (as we haven’t published yet) - we will get to that.</p>
+<section id="merge-and-tidy---the-author" class="level3">
+<h3 class="anchored" data-anchor-id="merge-and-tidy---the-author">Merge and tidy - the author</h3>
+<p>At this stage, the author can merge the branch. You might want to include in the description (and hence the commit history), the QASAR level requested.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All other information about who QA’d and when will be logged automatically in the pull request.</p>
+</div>
+</div>
+<p>Once the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!</p>
+<p><img src="pics/qasar-pr-merged.png" class="img-fluid"></p>
 </section>
-<section id="cloning-a-repository" class="level1">
-<h1>Cloning a repository</h1>
-<p>If, instead of creating your own repo from scratch, you want to take something someone else has done for yourself, you can clone the repo. To do this, click ‘Clone Repository’ instead:</p>
-<p><img src="pics/sourcecontrol.png" class="img-fluid"></p>
-<p>(Note: if you’re already working on a repo, you can clear what you’re working on by opening a new window (File -&gt; New window) or by closing the current folder (File -&gt; Close folder)).</p>
-<p>In the top bar, click ‘Clone from GitHub’ and start typing for the repo you want.</p>
-<p><img src="pics/clonerepo.png" class="img-fluid"></p>
-<p>Save to your ‘OneDrive’ folder. You can now work on the files.</p>
 </section>
-<section id="branching" class="level1">
-<h1>Branching</h1>
-<p>Now, the whole point of GitHub is to work collaboratively, so there will be times where you want to clone someone’s repo and make your own additions. This is also best practice for your own repos: when adding a new development, create a new branch. <strong>Never work in ‘main’.</strong></p>
-<p>This is where branches come in.</p>
-<p>Once you’ve cloned a repo, ensure you are in your Source Control view and click the ‘…’ as shown below.</p>
-<p><img src="pics/branch.png" class="img-fluid"></p>
-<p>And enter the desired branch name (e.g.&nbsp;‘dev’)</p>
-<p><img src="pics/branchname.png" class="img-fluid"></p>
-<p>Switching branches: you can switch branches within VSCode in the bottom left of the screen:</p>
-<p><img src="pics/switchbranch.png" class="img-fluid"></p>
-<p>In your branch, you can work on you script, add and delete files etc. If you want, it can be merged to the ‘main’ branch, which we will again get to…</p>
+<section id="what-to-do-if-you-spot-an-issue-or-have-an-idea" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-do-if-you-spot-an-issue-or-have-an-idea">2. What to do if you spot an issue or have an idea</h2>
+<p>If you are not within the designated QA process, it is still possible that, in using the code, you see a bug or you have a suggestion for a development. You can do that by creating <em>issues</em>. Any user with read access to a repo can create an issue (assuming that issues are enabled for the repo).</p>
+<p><img src="pics/issues.png" class="img-fluid"></p>
+<section id="the-process" class="level3">
+<h3 class="anchored" data-anchor-id="the-process">The process</h3>
+<ol type="1">
+<li><p><strong>[You, the idea-haver or bug-spotter]</strong> Create an issue detailing the problem or idea (help here: <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue" class="uri">https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue</a>).</p></li>
+<li><p><strong>[You]</strong> If the error or bug is solvable and you feel inclined, you have the option to create a branch that addresses the issue. You can link the pull request with the issue (<a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword" class="uri">https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword</a>).</p></li>
+<li><p><strong>[The author]</strong> The person managing the code can add the issue number to any relevant ticket on the task board.</p></li>
+<li><p><strong>[The author]</strong> The error, bug, or development can be prioritised and actions. Their pull request can also be linked with the issue (<a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword" class="uri">https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword</a>).</p></li>
+<li><p>Issues linked with a pull request will close automatically when they are merged. If not, they can be closed by users with triage permission or greater (<a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/administering-issues/closing-an-issue" class="uri">https://docs.github.com/en/issues/tracking-your-work-with-issues/administering-issues/closing-an-issue</a>).</p></li>
+</ol>
 </section>
-<section id="tracking-and-staging" class="level1">
-<h1>Tracking and staging</h1>
-<p>Once you’ve done the above, you can now make changes to the repository. This could be: - Changing an existing file (e.g.&nbsp;adding new lines of code) - Adding new files (including codefiles) into the repo - Removing files from the repo (be careful of dependencies!)</p>
-<p>This is where the real power of GitHub comes in - tracking changes without losing what you’ve already done.</p>
-<p>First, another best practice to remember: COMMIT OFTEN, PERFECT LATER, PUBLISH ONCE</p>
-<p>If you commit smaller changes it’s far easier to go back if you’ve made a mistake and saves more work down the line. Again, think of it as saving an excel workbook.</p>
-<p>The how to bit: Once you’ve changed something, navigate to the Source Control tab again. You’ll see a ‘changes’ section in the source control, as below.</p>
 </section>
-<section id="commit" class="level1">
-<h1>Commit</h1>
-<p>Including a bit on the Git Log</p>
-</section>
-<section id="git-restore" class="level1">
-<h1>Git restore</h1>
-</section>
-<section id="merge" class="level1">
-<h1>Merge</h1>
-</section>
-<section id="merge-conflicts" class="level1">
-<h1>Merge conflicts</h1>
-</section>
-<section id="git-log" class="level1">
-<h1>Git Log</h1>
-</section>
-<section id="diff" class="level1">
-<h1>diff</h1>
-</section>
-<section id="roll-back" class="level1">
-<h1>Roll back</h1>
-</section>
-<section id="git-revert" class="level1">
-<h1>Git revert</h1>
-</section>
-<section id="publishing-an-existing-repo" class="level1">
-<h1>Publishing an existing repo</h1>
-</section>
-<section id="push-and-pull" class="level1">
-<h1>Push and pull</h1>
-</section>
-<section id="forking-and-cloning" class="level1">
-<h1>Forking and cloning</h1>
-</section>
-<section id="pull-requests" class="level1">
-<h1>Pull requests</h1>
-</section>
-<section id="issues" class="level1">
-<h1>Issues</h1>
-</section>
-<section id="using-git-in-rstudio" class="level1">
-<h1>Using Git in RStudio</h1>
-<section id="part-1-create-a-new-rstudio-project-with-git" class="level2">
-<h2 class="anchored" data-anchor-id="part-1-create-a-new-rstudio-project-with-git">Part 1: Create a new RStudio project with Git</h2>
-<p>There are three ways to create version control for a RStudio project.</p>
-<p>a) <strong>Create a new project and create a local Git repository:</strong> Select <em>File &gt; New Project..</em>, create a project from a <em>New Directory</em> and check the option <em>Create a git repository</em>. In order to push to a remote repository later on you add that remote repository by using the Git shell. If you already know which online repository you want to use for your projects, option c) is more convenient.</p>
-<p>b) <strong>Create a new project from a folder under version control:</strong> In this case you only need to create a new RStudio project for that directory and version control is automatically enabled. Go to <em>File &gt; New Project</em>, select create a new project from an <em>Existing Directory</em> and create the project.</p>
-<p>c) <strong>Create a new project based on a remote Git repository:</strong> Select <em>File &gt; New Project..</em> and from the opening menu select to create a new project from <em>Version Control</em>, Choose Git, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the the repository you want to clone and create the project.</p>
-<p>In this tutorial we <strong>create a project based on a remote GitHub repository</strong> (option c). Hence we first create a new repository on GitHub and create our GitHub project from that repository.</p>
-<p><strong>1. Create a new GitHub repository:</strong> Login to your GitHub account and create a new GitHub repository. Give your new repository a short and memorable name e.g.&nbsp;<code>rstudio-git-test</code>, check the option to initialize this repository with a README and create the repository.</p>
-<p><strong>2. Copy the repository HTTPS url:</strong> To create a new Git based project in RStudio, we need the repository url. You find the repository HTTPS url on the just created GitHub project page. There press the button <em>&lt;&gt; Code</em> (green button) and copy the HTTPS link of the project by clicking the little icon to the right of the URL. The link will be something like <code>https://github.com/yourusername/rstudio-git-test.git</code>.</p>
-<p><strong>3. Create a new RStudio project with Git version control:</strong> Now everything is ready to create a new project with Git version control in RStudio. In RStudio Select <em>File &gt; New Project..</em>, select <em>Version Control</em>, Choose <em>Git</em>, then provide the repository HTTPS link, select the R workspace folder and create the project. RStudio now copies (<em>clone</em> in Git terms) the content of the repository to your project folder. The content of the GitHub repository should now appear in the Files pane of RStudio and you should see there the created <code>README.md</code>.</p>
-<p><img src="pics/RStudio-clone-git-project.gif" class="img-fluid"></p>
-</section>
-<section id="part-2-make-local-changes-commit-and-push-to-github" class="level2">
-<h2 class="anchored" data-anchor-id="part-2-make-local-changes-commit-and-push-to-github">Part 2: Make local changes, commit and push to GitHub</h2>
-<p><strong>1. Make local changes:</strong> Open the <code>README.md</code> file and edit and save the file.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># RR project in RStudio</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>RR workshop RStudio <span class="sc">+</span> Git repository</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>My first commit to GitHub with R </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>2. Commit the changes:</strong> Now we commit the local changes to the local Git repository.<br>
-In RStudio press the <em>Git</em> icon and select <em>Commit</em> from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the <em>Staged</em> column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.<code>Readme update</code> and press the <em>Commit</em> button.</p>
-<p><img src="pics/RStudio-commit.png" class="img-fluid"></p>
-<p><strong>3. Push to the remote repository:</strong> To push the changes to the remote GitHub repository press the <em>Push</em> button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub.</p>
+<section id="summary-of-the-process" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-the-process">Summary of the process</h2>
+<p><img src="pics/qa-process.png" class="img-fluid"></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
