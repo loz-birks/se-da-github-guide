@@ -1,5 +1,3 @@
-
-
 :root>* {
   --md-primary-fg-color: #005eb8;
   --md-default-bg-color: #f8f8f8;
@@ -24,4 +22,31 @@
 
 .md-footer {
   background-color: #f6f8f8 !important;
+}
+
+/* make titles in sidebar bold */
+.sidebar-item-text.sidebar-link.text-start {
+    font-weight: bold;
+    color: #005eb8;
+}
+
+/* Change link text color */
+.quarto-nav a {
+  color: #003087; 
+}
+
+/* Apply a custom font to the entire document */
+body {
+  font-family: 'Arial', sans-serif;  /* Replace with your desired font */
+}
+
+/* Change the color of all headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #005eb8;  /* Replace with your preferred color */
+}
+
+.sidebar-title{
+  font-weight: bold;
+    color: #005eb8;
+    font-size: 34px;
 }
