@@ -14,7 +14,7 @@ b\) **Create a new project from a folder under version control:** In this case y
 
 c\) **Create a new project based on a remote Git repository:** Select *File \> New Project..* and from the opening menu select to create a new project from *Version Control*, Choose Git, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the the repository you want to clone and create the project.
 
-In this tutorial we **create a project based on a remote GitHub repository** (option c). Hence we first create a new repository on GitHub and create our GitHub project from that repository.
+In this tutorial we **create a project by cloning a remote GitHub repository (option c). Hence we first create a new repository on GitHub and then use RStudio to clone that repository and set up our GitHub project.
 
 **1. Create a new GitHub repository:** Login to your GitHub account and create a new GitHub repository. Give your new repository a short and memorable name e.g. `rstudio-git-test`, check the option to initialize this repository with a README and create the repository.
 
