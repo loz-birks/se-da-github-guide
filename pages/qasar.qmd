@@ -2,8 +2,14 @@
 title: "QA on GitHub"
 ---
 
+## Summary
+
+Just need a quick reminder? This flowchart shows a summary of the process.
+
+![](pics/qasar-flowchart.png)
+
 ::: callout-note
-This process can be managed in GitHub desktop, VS Code, RStudio, or wherever you are most comfortable with.
+This process can be managed in GitHub desktop, VS Code, RStudio, or the IDE you are most comfortable with.
 :::
 
 ## Remember the principles of branching
@@ -106,11 +112,12 @@ If as the reviewer, you've spotted something which needs to be changed before be
 
 At this stage, the work now sits back with the author. 
 
-If the author decides to make changes on the back of the review, the author should decide if another review is required (correcting a spelling error doesn't require one, but changing methodology may). If so, the author can use can **re-request review** on the same pull request, notifying the reviewer.
+If the author decides to make changes on the back of the review, these changes should be made on the same branch. The author should decide if another review is required (correcting a spelling error doesn't require one, but changing methodology may). If so, the author can use **re-request review** on the same pull request, notifying the reviewer.
 
 After any changes are made, the branch is ready to merge. Once the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!
 
 ![](pics/qasar-pr-merged.png)
+
 The author should then update the README (directly onto the main branch is fine) with QASAR information including level of QA, who conducted QA, and sign off if relevant. This information is included in the se-template and makes QASAR information easy to find. Further detail is available in the repo history.
 
 ## 2. What to do if you spot an issue or have an idea
