@@ -1,7 +1,7 @@
 ---
-title: "Another Page"
+title: "OUTDATED"
 ---
 
-Here is another page test!
+Please note that this document is no longer being updated.
 
-![](https://media.giphy.com/media/3orieKKmYyvUdR3RkY/giphy.gif)
+Please use [https://nhsengland.github.io/se-da-github-guide](https://nhsengland.github.io/se-da-github-guide)
