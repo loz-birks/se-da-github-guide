@@ -1,9 +1,15 @@
 ---
-title: "Branches and Issues for QA"
+title: "QA on GitHub"
 ---
 
+## Summary
+
+Just need a quick reminder? This flowchart shows a summary of the process.
+
+![](pics/qasar-flowchart.png)
+
 ::: callout-note
-This process can be managed in GitHub desktop, VS Code, or wherever you are most comfortable.
+This process can be managed in GitHub desktop, VS Code, RStudio, or the IDE you are most comfortable with.
 :::
 
 ## Remember the principles of branching
@@ -36,13 +42,15 @@ If you are the **author**:
 
 -   You may want to include the author and latest modification date at the top (although GitHub will help manage this for you).
 
--   Ensure that your repo is up to date on GitHub so that the person QA-ing has the most recent version. 
+-   Ensure that you have committed and pushed the latest changes so that the person QA-ing has the most recent version. 
 
 -   Make sure that the reviewer is a collaborator in the repo settings.
 
-If you are the **QA'er**: 
+-   Ensure any files (e.g. config) required for the code are uploaded onto SharePoint for the reviewer to use. Include the SharePoint file path in the pull request from Analysis. E.g. Analysis/Public Health/Flu/Adhoc/Example Project/GitHub Files/.
 
--   Make sure that you have the time and knowledge to do the review.
+If you are the **reviewer**: 
+
+-   Make sure that you have the time, access, and knowledge to do the review.
 
 ### Request QA - the author
 
@@ -50,9 +58,13 @@ Given that all your changes are in a new feature branch, the QA process boils do
 
 -   Create a pull request with your changes
 
--   Add a description of what needs to be QA'd, why changes have been made, and any specific QA requests
+-   Add a description of what needs to be QA'd, why changes have been made, location of any required files on Sharepoint in order to run the code, and any specific QA requests
 
 -   Assign a reviewer and click *create pull request*
+
+Here's an example of a filled in pull request.
+
+![](pics/qasar-pr-completed.png)
 
 ### Complete QA - the reviewer
 
@@ -60,7 +72,11 @@ Once you've been added as a reviewer, you will receive an email with a link, and
 
 ![](pics/qasar-pr-notification.png)
 
-Additions will be in green and removals in red. Review all changes and files, adding comments and requesting changes where necessary. 
+::: callout-tip
+Additions will be in green and removals in red  
+:::
+
+Review the QA checklist and files changed list. Add comments and request changes where necessary. The best way to do this is often to **clone the repository** to your local area, and run the code yourself.
 
 ![](pics/qasar-pr-request.png)
 
@@ -68,21 +84,41 @@ Comments can be added in-line with code
 
 ![](pics/qasar-pr-comment.png)
 
-Once you are happy with the changes and all issues are resolved, you can approve the pull request. 
+After reviewing the code, as reviewer, you decide what the verdict is. Click "Review Changes" and leave an overall comment, with one of the following options:  
+-   **Comment** - Submit general feedback without explicit approval  
+-   **Approve** - Submit feedback and approve merging these changes  
+-   **Request changes** - Submit feedback that must be addressed before merging  
 
+
+::: {.panel-tabset .panel-tabset-fade}
+#### Comment
+If as the reviewer, you think there could be some improvements, or you're not sure about xyz, this is a good way to convey that.
+
+![](pics/qasar-pr-submit-review-comment.png)
+
+#### Approve
+If as the reviewer, you're happy with the piece of work, and want the author to merge this into main branch with no edits, this is what you want.
+
+![](pics/qasar-pr-submit-review-approve.png)
 ![](pics/qasar-pr-approved.png)
+
+#### Request changes
+If as the reviewer, you've spotted something which needs to be changed before being merged into main, you can request changes to deny the pull request until those are actioned.
+
+![](pics/qasar-pr-submit-review-req-changes.png)
+:::
 
 ### Merge and tidy - the author
 
-At this stage, the author can merge the branch. You might want to include in the description (and hence the commit history), the QASAR level requested. 
+At this stage, the work now sits back with the author. 
 
-::: callout-note
-All other information about who QA'd and when will be logged automatically in the pull request.
-:::
+If the author decides to make changes on the back of the review, these changes should be made on the same branch. The author should decide if another review is required (correcting a spelling error doesn't require one, but changing methodology may). If so, the author can use **re-request review** on the same pull request, notifying the reviewer.
 
-Once the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!
+After any changes are made, the branch is ready to merge. Once the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!
 
 ![](pics/qasar-pr-merged.png)
+
+The author should then update the README (directly onto the main branch is fine) with QASAR information including level of QA, who conducted QA, and sign off if relevant. This information is included in the se-template and makes QASAR information easy to find. Further detail is available in the repo history.
 
 ## 2. What to do if you spot an issue or have an idea
 
