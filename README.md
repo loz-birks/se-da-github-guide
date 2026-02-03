@@ -1,3 +1,6 @@
+# New repo on NHSE can be found below
+https://github.com/nhsengland/se-da-github-guide
+
 # South East D&A GitHub resources
 
 https://loz-birks.github.io/se-da-github-guide/pages/intro-to-github.html
